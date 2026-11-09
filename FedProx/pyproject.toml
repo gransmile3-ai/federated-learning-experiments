@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fedprox-pytorch"
+version = "1.0.0"
+description = "FedProx with PyTorch and Flower (CIFAR-10, AWS SuperLink + Mac/Desktop SuperNodes)"
+license = {file = "LICENSE"}
+dependencies = [
+    "flwr[simulation]>=1.36.0",
+    "flwr-datasets[vision]>=0.6.1",
+    "torch==2.10.0",
+    "torchvision==0.25.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.flwr.app]
+publisher = "example"
+fab-format-version = 1
+flwr-version-target = "1.36.0"
+
+[tool.flwr.app.components]
+serverapp = "fedprox.server_app:app"
+clientapp = "fedprox.client_app:app"
+
+[tool.flwr.app.config]
+# FedAvg 실험(quickstart-pytorch)과 동일한 조건 + FedProx 근접항 계수
+num-server-rounds = 3
+fraction-evaluate = 1.0
+local-epochs = 1
+learning-rate = 0.1
+batch-size = 32
+proximal-mu = 0.1
+save-model = true

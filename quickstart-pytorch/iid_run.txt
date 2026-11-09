@@ -1,0 +1,3 @@
+Using SuperLink: local (127.0.0.1:39091)
+Successfully started run 1817444685064280021
+[92mINFO [0m:      Starting logstream for run_id `1817444685064280021`

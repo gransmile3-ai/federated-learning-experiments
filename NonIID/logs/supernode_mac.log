@@ -1,0 +1,662 @@
+[92mINFO [0m:      Starting Flower SuperNode
+[93mWARNING [0m:   Option `--insecure` was set. Starting insecure channel to <SUPERLINK_IP>:8000.
+INFO:     Started server process [46704]
+INFO:     Waiting for application startup.
+[92mINFO [0m:      FastAPI lifespan: startup
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:9094 (Press CTRL+C to quit)
+[92mINFO [0m:      SuperNode ID: 2851853990808344773
+[92mINFO [0m:      Starting Flower SuperExec
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: 6fb1ea625b26d3a57eedede1963b02159ceb9ecf8c15d1af1e25ca64a62e81d1)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: ad0bc071a77db5cf635def964d213d884b98852956a81f842cfe0f197b5c1866)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: 44a97fe460610bbd75fe1018269d44a618c98b19a00b21de8b30393b590e93f8)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: a7f1ecc11e1b56e3c3130599851529c8d34864ef307174d153ea5f4d7a488f65)
+[93mWARNING [0m:   Connection attempt failed, retrying in 0.82 seconds
+[92mINFO [0m:      Connection successful after 0.90 seconds and 2 tries.
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: fd490692b56aeab935829a57093fb3d5498372cba4428e63c98820f4ab1864d2)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: 5df562e5d3192f20aa746d3d8018636675ba105bba65d627ff1a6f9fcafc8cb3)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: ead2ef9db8786d921695f9c6e89a22f8e5b5666a6df4aef71cf42d55a17633a8)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: 7d4c1e54134d39aed3522953add540653a107cd214a972520941c1548401417b)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: 5f4edf483b97da9dfbc301add13653361e16fc73f0511d3fa0f093b1df5dd5a1)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: 09ce2f58ae06ab6bf88afe26437b39bcb394611876a40815fd60cfb6e6504cb1)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: 8ae22f56e0944ae36a44d6f1b69ee857df3953988e7493cc2c1faf489ec14389)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: 6160d591ce315c7697d9511cb15247ed59cb339c3c3c2f764fb6a9cab49b05de)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: deb70e01512c31af297d8ac2c0ab2cf65efb21e4fe24857169653c49b0c7028a)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: b1d1d5b6c55cb216d2db1d7dfbaeb3c0d7b09b8ed69c5b52ae856ca4559244aa)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: d73c294be14cf01c74df3623e3850e4f6141f28ddf0ae7ca941f158e7b712d5f)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: 5ac2d69de76eb298d7672c877c40ac221f431d1386d57b96f387f25e413a3bf9)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: 990a8f428f36baca8fc8e249ec8cb8a31e700aa73058dcb955c14bcf1ee0e53f)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: d4688f76cc5f46020ff38e14af4920b58b557cbc5d869d452581ef2a797d59f1)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: ba28029aa2408bcd8e7c99d2aab786176ce1345a3e6c2ef73c9c4d76ff961149)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: 33f8e337010bd035bb6a3a384f080083633250b1a6ab74c495c3fbaf92884e5e)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: eb1b653c0871915911ef1b466965ef535513a371d9279fc3d607010149b2ac43)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: 357305bed6553892a68a7c10b21d94490cc5e2b26b0690fac86efdd08ac22861)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: dd94d4a52b54fd739f0a4a80ffce68672a5b39805f94b36a067d2c82dde5de4f)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: 442dc373a623ee57590d20141ee31a112340a6946a19e6af0ac936adbe01a852)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: 05c57c5f067c4d4339028214144b5c4ed5325c141c72e8897e8a36e894a09c1f)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: 61b45c140ceaea5583a40d7a43b196e7095b5db45e92886704d330211db15c95)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: 7b7f1a429544b508441ebfb4701b5190694810978d48bfaf47fcf8f8218499c6)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: 641a7ba8837a2a1cd4b314ebb5772b6b1571b6f04c66f729b9dfb7351c80188d)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: 6d5d07e836f9bb76d58ca5df938292fb515973aabc39842e73f08e1cfe447e84)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: 3464f4043f174cb61d8e4416c3931e8d9ff0beec3073216ce9778c2277026917)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: 842c2355e92c151e9c10a8ba297f381f4d2234d9b5bc445d5eb37fcaa686b925)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: ba6a217eea947ef9689f3a040194dfefe6892e1902ea4b5c801eaffaa0f71ebc)
+[93mWARNING [0m:   Connection attempt failed, retrying in 0.03 seconds
+[92mINFO [0m:      Connection successful after 0.11 seconds and 2 tries.
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: cf17e889a83ee0521417fe6b9da2e9530eb05f18c79bbc700a5bfd6d3de1f4eb)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: 0e4dfc831ad39c68b6be53cf107928fc454ac72f72b0d6b555da34fe803cbe07)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: b8226d6e7922d77da6fcc723d6db24131949cd061691cd512fdc2581026a52dd)
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      Received successfully
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: 3342004bc1fd67042936d5797f4da0bcce9c6ef68892aa379c10c1f7bfa80131)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: train message (ID: 4a836990c626a7a3bad92f7161798520ace78fc4448bd52ff52aa7b6fdc274cf)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: train message (ID: 3a3bc405fe62672fbf8b58e9ea007f5a3122a03ed5491cf1d8fde2871ea62c54)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Receiving: evaluate message (ID: e4eb2f54029b5a32777a9854acafcaceec8d395f1e4aad78361c1cb157abc907)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 5641248896997268148]
+[92mINFO [0m:      Sending: evaluate message (ID: 882baf904e18eebaeb736d566723bc5e252f9d2d8b34bfc31c2786e09cee1b28)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: b1514941d7786520ee3652ec7dbd623a81fff7c30acc0fb0ad526ce1c641da37)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: cc0ae03b878729dbb7acd724de10b3691782f420ccb03db0608b45078780d1a6)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: c327f6f81e0daebdabc459798a9be949eb386120dabaec831d782a50d8ed57d6)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: 861e9bfda4a01cbaab7e83be6bcca3b0fed2399d2ee32dc3b2d24569fe22a675)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: bfdea1eaab078d825c77ca5cdadb122364f9a95c24482f4f85b51c08b54bbc32)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: 2f773fdb8ee30110a678872f7c4255ef854ca6185187a7188f4b823ec572bd50)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: 0ee6903cd3ee98aaf920f03ef508eed23b4046872f58ec441f86a5c687d0c026)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: 7d4ef6be79a15375d09fdc68f3d77351559f1af3a89489038079d593862139e9)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: 670df0cbd13285143873badadd7b7e3e2bf345b5b77d23da1e6e677bbea06ef3)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: d9a7c8f4ec9f5b17e79527c174f87249891753061626df6eaa308e65d20297cf)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: 26a0145b824ba515ca71863a8961fa3cd43197430c08781b54e8cfd5e2ed21c4)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: 2096b0a5b74aa0ce7b646a33f830e0f19998229362deec00086bc08a47181d5e)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: da2c77b50bc2df8548c3b2f51416b5a452f0a5ef4c7523a917f3b748ccbfd970)
+[92mINFO [0m:      Start `flwr-clientapp` process
+[92mINFO [0m:      Received successfully
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: 1d55bef05d4d16fae22bd07258d11559021758a48127623d5fda8349025edfae)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: ccca30db67aeee2904d7a558edddf5363799f3e60fcf2eb8375c7759b8b330ef)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: e035afb92784d1348bd0facc097585fba6e0cdc727c4c9f62feeea3fb2563d8c)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: 35aa92a491db9f62a2f45cb6358ce554e8405757b470cd17fbc559243139e601)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: 9b2b965b5e07c8473d9bb7c9e2187a44b781acd3a87acfdd83e45ba2a0159c98)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: 06a25d8a8cfccc308f7d5d1a349d92525b03522a5a62ce7fc33492865b2a78ba)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: 00ca23a1557d84ea6d097a84e8e0fb0fa41fdf37f2ca7304d1b9add300a87429)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: b758ab55d5e45a30dca70e4b8f5ae44cbccc55173061234dbf9927ede57cb800)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: 874c2f83f2c535f6501364988f3abff6274fb5a9a2c575008484da27146fba08)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: b23588b19cc3bed6820c9d86634c1f3fd81556bda171aecd1f071013badfc6ac)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: 32c4106096c8c37a41947a3599fe41f4815b362c7229a45f8d04f1af29040d5d)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: 8c8fede48365f11b439208a5a9afd33c0a57631f71310b2a44a2e8b7261971c9)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: ce99a6e6eca762bc91aa9f23adc26c0cfba4f61c2e2d8c370c235b7cd082332b)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: 13e1fc983616f7c0f8accbb023fefe8b24e01eddb93e129450e32ed59a23ae9a)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: 0fe3891a5aa70b0010b5693c3cb2e514bddf96d93ad1fc15a72cedef23582760)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: dbbb7dca2cf81b13fce3d7700fb225e6e27c6c0c28ccf32b265493484c17aeab)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: 8c7a2bffd421ac2e9b9b6339cbb0b15e032c570d0c2269a0ba65e89c2ef68edd)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: 13e23344a9148199ff37e31867a43f5cde424778dda73c1401c6e3ecc1a061c0)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: 3546af97c2e596155f0d0240a632667a90bd0c4c801b80138aaa22493c217058)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: e8a81c308bb308223e84a59a20c86296c09522968babd58f8187ead7d0e8619b)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: 33800a160fd2cb4eb28ed88824c35891e605c7ff340ee5a255a1fd18bd9f90e5)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: 22aeb3f4e87a8b0760cc4e9113ea15199454b3c7c0c995be6c6b6089f029e023)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: 1608d9b87848e130388eb5b8e58c92e84ab8059b1b4f25bb5a2b8e460a1e1613)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: train message (ID: 6c4d2235db3dde9a75b48a8e3590a5d7fcfbf4450d457e6aa4fa1c432c894d8b)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: train message (ID: 1601d95748f60811564c29e7354a7bcd68898d7ca4d502ebddb0d71e6980d941)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Receiving: evaluate message (ID: 462447d9a4092ed8e85300a8658005e919834ba82dca28b66af36f99afdb2742)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 4584835407938268105]
+[92mINFO [0m:      Sending: evaluate message (ID: 409959a57333f46160bcb01afafb8bfca3e55c7184c499dd6f72348e430f45b1)
+[93mWARNING [0m:   Connection attempt failed, retrying in 0.41 seconds
+[92mINFO [0m:      Connection successful after 0.50 seconds and 2 tries.
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: train message (ID: b5a1cbb2d52cbe7155a79f49449276613663f4c962d52b95557cbf4e269b946b)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: train message (ID: 27864408390a50c46fe7422d44a1337d2494580769443aa37b3b0ec71fce32d5)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: evaluate message (ID: cc24a48e528d78325a517f39abcea4a3b44def4b801dc156c5195fba89c5c811)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: evaluate message (ID: 14ebe15a0b8a3cc5f14f704936c4700b279655932386023e66440ad66b8ec8a8)
+[93mWARNING [0m:   Connection attempt failed, retrying in 0.82 seconds
+[92mINFO [0m:      Connection successful after 0.91 seconds and 2 tries.
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: train message (ID: f2a0095485f94f8258875ed9781366611189cb25bf6b09025dbf4d0be1799273)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: train message (ID: ec3763a0f88f0739f93022b6e02ea241c189a615453d5eedc873bcd60bd44424)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: evaluate message (ID: 7ffc6604eecc8ef1fdea5d577bb60a6b8735aa1641d8320cde0e095e2e736248)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: evaluate message (ID: aae0ccfd8159e965221b8acbd9c8f299519cd8b167ce4f1b3a146272da8d53ec)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: train message (ID: 42f016af53ecfbe304bf19a52fde1b495e91192186a9573dc9f14e1c7cb933ad)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: train message (ID: 8b721b2759f1b896b3f6d757b304c19bdc715ab2e353f554ef1e59c2e43d66b6)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: evaluate message (ID: 0cd660b0a7e2af366e669fdece2f7992a318c06cbd27d6df22263b5055b7f2ce)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: evaluate message (ID: fc0bf4623e97faa1e839f3ca7a52cd503df9e7142165bd5a13ecfe2b5fa6e7f5)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: train message (ID: 7344ffb7ab1bc4a7a8fe6624e9df668a396e9901748dbefe1d9321ae3fb7acd9)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: train message (ID: c44bbbc5179b491665fcfda426d5d8fc4c926ea64b36ed83ae33efce1fed7cae)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: evaluate message (ID: e9a9f283da41d925028bf7c2e2d3a1b3d9dd9803a8fdae93922c353ed62d5d83)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: evaluate message (ID: bc29f766a03fc56103ae45a38e3267021bccd8c02da22611a60c77fbe30403e5)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: train message (ID: 19cc381ccdd1df8e2919deb64fc885b509f77ea66d770889c505086812a231b7)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: train message (ID: 6d4de6a1b4cda7a8eb7742f75394a0a3c7874235198186ef2fdc3a0b05c6f8cf)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: evaluate message (ID: 88260581c857dcffa2106c8fe15e60646848e129f4f55c2b18513a04db3343d4)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: evaluate message (ID: 9b3409d397ce16af9ca08876e796611357d1adc3824b1f523cb2f47533caeef1)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: train message (ID: 073df99d277076e51ffbbecabdeadc96b1cc4f3c2070a0655ef85fdddabb4a2b)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: train message (ID: 843edbe676bcfcf134e820e983e1865788c9e8799d84cc9d1d4e14f9f8fbb73b)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: evaluate message (ID: 25271ddcb7111a93da5a30c434494e3e49ece3b6ff638be31c1ad613b16a7363)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: evaluate message (ID: 2d92c69783ce3a9ed74ad3293f92b5c85831db3aae4126e6ac29f7c6ea2f55ee)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: train message (ID: e3636ff8dde3f8a2f194c6aaf9ea4df25b204f3706589a23bcafa85b17c5cc74)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: train message (ID: 50024d67dbf80fa3e215769676c00dbea708b633f7c1410c341c1786f79d38f6)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: evaluate message (ID: a615100a1c806106c438de6f9a26c932a702f45d6e224282b9bbf598b8f54023)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: evaluate message (ID: 81eb4eaa222e405d124aa9d53fbab694f52ee125bd1ffe5e05df3f7c8991fd92)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: train message (ID: e0e95a4141ef8de0bc30def5a94b4258ffbe11d1a31e50c5ae122bde36e33fbe)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: train message (ID: 8d3157a1dffa4b82011f1a447793518c73196750747ea1579a81a7e19a9f5854)
+[92mINFO [0m:      
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: evaluate message (ID: 5914874f71603223cd6fe62a3e36eb895e4c9e7f5088f7d79ff9674bfd4e8e17)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: evaluate message (ID: 4013ac35509fded9c5650adbffc339fa6ef6c4855094819cc5e4a7bfd3722058)
+[92mINFO [0m:      
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: train message (ID: 0a4ddb82e7bc4ec4f1775552e6b4f64be11090ea12affbf3f0f161c04366e292)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: train message (ID: b864ad983ff111056eb04322ad468186e8816cecd5dcee8ec23ec4101624d7f0)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Receiving: evaluate message (ID: 47e15709df1c9be964ead8d9d927a06da7e8b20f8370e9d776d8eb5af1e648ea)
+[92mINFO [0m:      Received successfully
+[92mINFO [0m:      Start `flwr-clientapp` process
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[92mINFO [0m:      
+[92mINFO [0m:      
+[92mINFO [0m:      [RUN 14393467112459093669]
+[92mINFO [0m:      Sending: evaluate message (ID: f0662338ce88d27ef0872a38506f3f5ba69a4250873b40ce469f6b887385656b)
+[92mINFO [0m:      Sent successfully
+[92mINFO [0m:      SuperNode terminated gracefully.
+[92mINFO [0m:      SuperExec terminated gracefully.
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+[92mINFO [0m:      FastAPI lifespan: shutdown
+INFO:     Application shutdown complete.
+INFO:     Finished server process [46704]

@@ -1,0 +1,18 @@
+Global Arrays:
+	ArrayRecord (0.238 MB)
+
+Aggregated ClientApp-side Train Metrics:
+{ 1: {'train_loss': '2.1204e+00'},
+  2: {'train_loss': '2.0697e+00'},
+  3: {'train_loss': '2.0483e+00'}}
+
+Aggregated ClientApp-side Evaluate Metrics:
+{ 1: {'eval_acc': '1.4360e-01', 'eval_loss': '2.2510e+00'},
+  2: {'eval_acc': '2.1980e-01', 'eval_loss': '2.0063e+00'},
+  3: {'eval_acc': '2.1000e-01', 'eval_loss': '2.0131e+00'}}
+
+ServerApp-side Evaluate Metrics:
+{ 0: {'accuracy': '1.0000e-01', 'loss': '2.3047e+00'},
+  1: {'accuracy': '1.4340e-01', 'loss': '2.2501e+00'},
+  2: {'accuracy': '2.1750e-01', 'loss': '2.0075e+00'},
+  3: {'accuracy': '2.2180e-01', 'loss': '2.0125e+00'}}

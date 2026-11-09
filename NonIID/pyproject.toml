@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fedcompare"
+version = "1.0.0"
+description = "FedAvg vs FedProx on non-IID (Dirichlet) CIFAR-10, AWS SuperLink + Mac/Desktop SuperNodes"
+license = {file = "LICENSE"}
+dependencies = [
+    "flwr[simulation]>=1.36.0",
+    "flwr-datasets[vision]>=0.6.1",
+    "torch==2.10.0",
+    "torchvision==0.25.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["."]
+
+[tool.flwr.app]
+publisher = "example"
+fab-format-version = 1
+flwr-version-target = "1.36.0"
+
+[tool.flwr.app.components]
+serverapp = "fedcompare.server_app:app"
+clientapp = "fedcompare.client_app:app"
+
+[tool.flwr.app.config]
+strategy = "fedavg"
+partition = "dirichlet"
+dirichlet-alpha = 0.3
+proximal-mu = 0.1
+run-tag = "run"
+num-server-rounds = 10
+fraction-evaluate = 1.0
+local-epochs = 3
+learning-rate = 0.01
+batch-size = 32
+save-model = false
