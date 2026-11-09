@@ -1,54 +1,55 @@
 <!doctype html>
 <html lang="ko"><head><meta charset="utf-8">
-<title>FedAvg vs FedProx 비교 보고서 (Non-IID)</title>
+<title>FedAvg vs FedProx 비교 보고서 (Non-IID, μ 비교)</title>
 <style>
 @page { size: A4; margin: 16mm 15mm; }
 body { font-family: "Apple SD Gothic Neo", "AppleGothic", sans-serif; font-size: 10.5pt; line-height: 1.6; color: #1d1d1f; }
 h1 { font-size: 18pt; margin: 0 0 2px; }
 .sub { color: #666; margin-bottom: 14px; }
 h2 { font-size: 13pt; border-bottom: 2px solid #2a78d6; padding-bottom: 3px; margin-top: 20px; }
-table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 9.8pt; }
-th, td { border: 1px solid #ccc; padding: 4px 7px; text-align: center; }
+table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 9.6pt; }
+th, td { border: 1px solid #ccc; padding: 4px 6px; text-align: center; }
 th { background: #f1f4f8; }
 td.l, th.l { text-align: left; }
 .win { font-weight: bold; color: #1a5fb4; }
 img { width: 100%; margin: 6px 0; page-break-inside: avoid; }
 td.l:first-child { white-space: nowrap; }
 table { page-break-inside: avoid; }
-h2 { page-break-after: avoid; }
+h2, h3 { page-break-after: avoid; break-after: avoid; }
 .box { background: #f7f7f9; border-left: 4px solid #eb6834; padding: 8px 12px; margin: 10px 0; }
 .cap { font-size: 9pt; color: #666; margin-top: -4px; }
 ul { margin: 4px 0; padding-left: 20px; }
-.pb { page-break-before: always; }
 code { background: #f1f1f4; padding: 0 3px; border-radius: 3px; }
 </style></head><body>
 
 <h1>FedAvg vs FedProx 비교 실험 보고서</h1>
-<div class="sub">Non-IID (Dirichlet α=0.3) CIFAR-10 · Flower 1.36 · AWS SuperLink + Mac / Windows Desktop SuperNode · 2026-11-09 실행</div>
+<div class="sub">Non-IID (Dirichlet α=0.3) CIFAR-10 · Flower · SuperLink(AWS EC2 / Oracle Cloud A1) + Mac / Windows Desktop SuperNode · 2026-11-09~10 실행</div>
 
 <div class="box">
-<b>요약.</b> 클라이언트 2개, 10라운드 조건에서 <b>FedAvg가 정확도에서 앞섰다</b>.
-최종 정확도는 FedAvg 52.38%, FedProx(μ=0.1) 41.72%로 10.66%p 차이가 났다. 최고 정확도도 53.21%와 43.70%로 FedAvg가 높았다.
-반면 FedAvg는 4라운드 이후 서버 손실이 최저점보다 25.3% 다시 올랐다. FedProx는 같은 지표의 상승이 3.5%에 그쳤다.
-즉 FedProx는 더 느리게 학습했지만 손실은 더 안정적이었다. 단, 시드 1회 실험이고 μ도 한 가지 값만 시험했기 때문에 일반적인 결론으로 보기는 어렵다.
+<b>요약.</b> 클라이언트 2개, 10라운드 조건에서 μ를 0.01, 0.1, 1.0으로 바꿔 FedProx를 FedAvg와 비교했다.
+<b>FedProx(μ=0.01)가 가장 좋았다.</b> 최종 정확도는 μ=0.01 54.97%, FedAvg 52.38%, μ=0.1 41.72%, μ=1.0 27.20%였다.
+μ=0.01은 FedAvg보다 2.59%p 높았고, 최저점 대비 손실 상승도 8.4%로 FedAvg(25.3%)보다 작았다.
+반대로 μ가 커질수록 학습이 느려져 정확도가 크게 떨어졌다. 즉 이 설정에서 근접항은 <b>아주 약하게 줄 때만</b> 도움이 됐다.
+단, 각 조건을 시드 1회씩만 실행했기 때문에 2–3%p 차이는 우연일 수 있다.
 </div>
 
 <h2>1. 실험 목적</h2>
-<p>클라이언트마다 라벨 분포가 크게 다른 Non-IID 환경에서, 근접항(proximal term)을 추가한 FedProx가 FedAvg보다 수렴과 안정성이 나은지 확인한다.</p>
+<p>클라이언트마다 라벨 분포가 크게 다른 Non-IID 환경에서, 근접항(proximal term)을 추가한 FedProx가 FedAvg보다 수렴과 안정성이 나은지 확인한다. 또 근접항의 세기 μ에 따라 결과가 어떻게 달라지는지 본다.</p>
 
 <h2>2. 실험 환경 및 설정</h2>
 <table>
 <tr><th class="l">항목</th><th class="l">값</th></tr>
-<tr><td class="l">프레임워크</td><td class="l">Flower 1.36 (Deployment Engine, <code>flwr run . aws</code>)</td></tr>
-<tr><td class="l">구성</td><td class="l">SuperLink: AWS EC2 · SuperNode 2개: Windows Desktop(partition 0), Mac(partition 1) · Tailscale 연결</td></tr>
+<tr><td class="l">프레임워크</td><td class="l">Flower Deployment Engine (<code>flwr run</code>), 한 프로젝트(<code>fedcompare</code>)에서 run-config로 전략과 μ만 바꿈</td></tr>
+<tr><td class="l">구성</td><td class="l">SuperNode 2개: Windows Desktop(partition 0), Mac(partition 1) · Tailscale 연결<br>SuperLink: FedAvg, μ=0.1은 AWS EC2 · μ=0.01, μ=1.0은 Oracle Cloud A1(2 OCPU, ARM)</td></tr>
 <tr><td class="l">데이터</td><td class="l">CIFAR-10 학습셋 50,000장을 Dirichlet(α=0.3, seed=42)로 2분할하고, 노드마다 80% 학습 / 20% 로컬 평가로 나눔</td></tr>
-<tr><td class="l">모델</td><td class="l">간단한 CNN (Conv 2층 + FC 3층, PyTorch 60 Minute Blitz 기반)</td></tr>
+<tr><td class="l">모델</td><td class="l">간단한 CNN (Conv 2층 + FC 3층, PyTorch 60 Minute Blitz 기반), 초기 가중치 seed=42 고정</td></tr>
 <tr><td class="l">로컬 학습</td><td class="l">SGD (lr=0.01, momentum=0.9), batch 32, local epoch 3</td></tr>
 <tr><td class="l">연합 학습</td><td class="l">10라운드, 매 라운드 2개 노드 전원 참여 (fraction-evaluate=1.0)</td></tr>
-<tr><td class="l">비교 대상</td><td class="l">FedAvg (μ=0) vs FedProx (μ=0.1). 손실에 (μ/2)·‖w − w<sub>global</sub>‖²를 더함</td></tr>
+<tr><td class="l">비교 대상</td><td class="l">FedAvg (μ=0) vs FedProx (μ=0.01, 0.1, 1.0). 손실에 (μ/2)·‖w − w<sub>global</sub>‖²를 더함</td></tr>
 <tr><td class="l">평가</td><td class="l">서버: CIFAR-10 test 10,000장 전역 평가 · 클라이언트: 로컬 20% 평가셋의 가중 평균</td></tr>
-<tr><td class="l">소요 시간</td><td class="l">FedAvg 7분 03초 · FedProx 6분 57초</td></tr>
+<tr><td class="l">소요 시간</td><td class="l">FedAvg 7분 03초 · μ=0.1 6분 57초 (AWS) · μ=0.01 10분 18초 · μ=1.0 10분 16초 (Oracle)</td></tr>
 </table>
+<p class="cap">SuperLink 서버가 실험 중간에 바뀌었지만 코드, 시드, 설정은 같다. 네 실험 모두 0라운드(초기 모델) 정확도가 10.2%로 같아서 같은 초기 가중치에서 출발했음을 확인했다. Oracle 실행이 약 3분 더 걸린 것은 서버 사양 차이로, 학습 결과에는 영향이 없다.</p>
 
 <h3 style="font-size:11pt;margin-bottom:2px">데이터 분포 (Non-IID 정도)</h3>
 <img src="label_distribution.png">
@@ -59,43 +60,43 @@ code { background: #f1f1f4; padding: 0 3px; border-radius: 3px; }
 <p class="cap">그림 2. 라운드별 서버 전역 정확도와 손실, 클라이언트 로컬 평가 정확도, 클라이언트 학습 손실</p>
 
 <table>
-<tr><th class="l">지표 (서버 전역 평가)</th><th>FedAvg</th><th>FedProx (μ=0.1)</th><th>차이</th></tr>
-<tr><td class="l">최종 정확도 (R10)</td><td class="win">52.38%</td><td>41.72%</td><td>+10.66%p</td></tr>
-<tr><td class="l">최고 정확도</td><td class="win">53.21% (R6)</td><td>43.70% (R8)</td><td>+9.51%p</td></tr>
-<tr><td class="l">R6–R10 평균 정확도</td><td class="win">52.59%</td><td>41.49%</td><td>+11.10%p</td></tr>
-<tr><td class="l">R6–R10 정확도 표준편차 (흔들림)</td><td class="win">0.78%p</td><td>1.69%p</td><td></td></tr>
-<tr><td class="l">40% 도달 라운드 / 50% 도달 라운드</td><td class="win">R3 / R4</td><td>R6 / 도달 못함</td><td></td></tr>
-<tr><td class="l">최저 손실</td><td class="win">1.408 (R4)</td><td>1.519 (R8)</td><td></td></tr>
-<tr><td class="l">최종 손실 (R10)</td><td>1.765</td><td class="win">1.572</td><td></td></tr>
-<tr><td class="l">최저점 대비 최종 손실 상승률</td><td>+25.3%</td><td class="win">+3.5%</td><td></td></tr>
-<tr><td class="l">클라이언트 로컬 평가 최종 정확도</td><td class="win">52.10%</td><td>41.14%</td><td>+10.96%p</td></tr>
+<tr><th class="l">지표 (서버 전역 평가)</th><th>FedAvg</th><th>FedProx μ=0.01</th><th>FedProx μ=0.1</th><th>FedProx μ=1.0</th></tr>
+<tr><td class="l">최종 정확도 (R10)</td><td>52.38%</td><td class="win">54.97%</td><td>41.72%</td><td>27.20%</td></tr>
+<tr><td class="l">최고 정확도</td><td>53.21% (R6)</td><td class="win">55.50% (R8)</td><td>43.70% (R8)</td><td>27.20% (R10)</td></tr>
+<tr><td class="l">R6–R10 평균 정확도</td><td>52.59%</td><td class="win">54.97%</td><td>41.49%</td><td>24.28%</td></tr>
+<tr><td class="l">R6–R10 표준편차 (흔들림)</td><td>0.78%p</td><td class="win">0.43%p</td><td>1.69%p</td><td>1.69%p</td></tr>
+<tr><td class="l">40% / 50% 도달 라운드</td><td class="win">R3 / R4</td><td>R3 / R5</td><td>R6 / 못함</td><td>못함 / 못함</td></tr>
+<tr><td class="l">최저 손실</td><td>1.408 (R4)</td><td class="win">1.284 (R7)</td><td>1.519 (R8)</td><td>2.016 (R10)</td></tr>
+<tr><td class="l">최종 손실 (R10)</td><td>1.765</td><td class="win">1.392</td><td>1.572</td><td>2.016</td></tr>
+<tr><td class="l">최저점 대비 최종 손실 상승률</td><td>+25.3%</td><td>+8.4%</td><td>+3.5%</td><td>0% (아직 감소 중)</td></tr>
+<tr><td class="l">클라이언트 로컬 평가 최종 정확도</td><td>52.10%</td><td class="win">55.16%</td><td>41.14%</td><td>25.85%</td></tr>
 </table>
 
 <h2>4. 분석</h2>
 <ul>
-<li><b>수렴 속도는 FedAvg가 빨랐다.</b> FedAvg는 4라운드에 50%를 넘었다. FedProx는 6라운드에야 40%를 넘었고 10라운드 안에 50%에 도달하지 못했다. 근접항이 로컬 모델을 전역 모델 가까이 묶어 두기 때문에, 라운드당 학습할 수 있는 양이 줄어든 것으로 보인다.</li>
-<li><b>FedAvg는 4라운드 이후 과적합이나 클라이언트 드리프트로 보이는 신호를 보였다.</b> 정확도는 52–53%에서 정체됐다. 그런데 서버 손실은 1.408(R4)에서 1.765(R10)로 계속 올랐다. 이는 맞히는 비율은 같아도, 틀린 예측에 대한 확신이 커졌다는 뜻이다. 각 노드가 자기 데이터에 치우친 방향으로 3 epoch씩 학습해서 생긴 현상으로 해석된다.</li>
-<li><b>FedProx는 손실이 더 안정적이었다.</b> 최저점 이후 손실 상승이 3.5%에 그쳤고, 정확도는 8라운드까지 꾸준히 올랐다. 이는 FedProx가 의도한 효과인 로컬 모델 이탈 억제와 일치한다. 다만 라운드 간 정확도 흔들림은 FedProx가 더 컸다 (R7, R9–R10 하락).</li>
-<li><b>학습 손실 그래프는 직접 비교할 수 없다.</b> FedProx의 train loss에는 근접항이 더해져 있어서 원래 높게 나온다. 그래서 그림 2 오른쪽 아래 그래프의 차이를 FedProx가 덜 학습됐다는 근거로 쓰면 안 된다.</li>
-<li><b>이번 조건은 FedProx에 유리한 환경이 아니었다.</b> FedProx는 원래 시스템 이질성에 대응하려고 만든 방법이다. 예를 들어 노드마다 로컬 학습량이 다르거나, 일부 노드만 참여하거나, 지연 노드가 있는 상황이다. 이번 실험은 노드 2개가 매 라운드 똑같이 3 epoch를 학습했다. 또 10라운드는 짧아서 FedAvg의 드리프트가 정확도를 크게 떨어뜨리기 전에 실험이 끝났다.</li>
+<li><b>μ=0.01이 정확도와 안정성을 모두 잡았다.</b> 초반 속도는 FedAvg와 거의 같았다 (40% 도달 R3, 50% 도달은 FedAvg보다 한 라운드 늦은 R5). 6라운드부터 FedAvg를 앞섰고, 마지막 5라운드 평균은 54.97%로 FedAvg보다 2.38%p 높았다. 흔들림(표준편차)도 0.43%p로 가장 작았다.</li>
+<li><b>FedAvg는 4라운드 이후 클라이언트 드리프트로 보이는 신호를 보였다.</b> 정확도는 52–53%에서 정체됐는데 서버 손실은 1.408(R4)에서 1.765(R10)로 25% 올랐다. 틀린 예측에 대한 확신이 커졌다는 뜻이다. μ=0.01은 같은 지표가 8.4%에 그쳐, 약한 근접항만으로도 로컬 모델이 자기 데이터 쪽으로 치우치는 것을 상당 부분 막았다.</li>
+<li><b>μ가 커질수록 학습이 느려졌다.</b> μ=0.1은 10라운드 안에 50%에 못 갔고, μ=1.0은 27%에 머물렀다. 근접항이 너무 세면 각 노드가 전역 모델에서 거의 움직이지 못해서 라운드당 학습량이 크게 줄어든다. μ=1.0은 손실이 끝까지 내려가는 중이라, 라운드를 늘리면 정확도는 더 오르겠지만 수렴이 매우 느리다.</li>
+<li><b>손실 안정성과 정확도 사이에 트레이드오프가 있다.</b> 손실 상승률만 보면 μ가 클수록 작다 (25.3% → 8.4% → 3.5% → 0%). 하지만 μ=0.1부터는 안정성을 얻는 대가로 정확도를 크게 잃는다. 이 설정에서는 μ=0.01이 그 균형점에 가장 가까웠다.</li>
+<li><b>학습 손실 그래프는 직접 비교할 수 없다.</b> FedProx의 train loss에는 근접항이 더해져 있어서 μ가 클수록 원래 높게 나온다. 그림 2 오른쪽 아래 그래프의 차이를 덜 학습됐다는 근거로 쓰면 안 된다.</li>
 </ul>
 
 <h2>5. 한계</h2>
 <ul>
-<li>시드 1회, 실행 1회 결과라서 분산을 알 수 없다. 10%p 차이는 크지만, 라운드별 1–2%p 차이는 우연일 수 있다.</li>
-<li>μ를 0.1 하나만 시험했다. 이 CNN과 momentum 0.9 조합에서는 0.1이 너무 셌을 수 있다. 원래 계획했던 μ=0.01과 μ=1.0은 AWS 서버를 끄면서 중단됐다.</li>
-<li>클라이언트가 2개뿐이라 일반적인 연합학습 환경(수십–수백 노드, 부분 참여)과는 거리가 있다.</li>
-<li>모델이 작고 라운드 수가 적어서 정확도 절대값이 낮다 (최고 53%).</li>
+<li>조건마다 시드 1회, 실행 1회 결과라서 분산을 알 수 없다. μ=0.01과 FedAvg의 2–3%p 차이는 우연일 수 있다. 반면 μ=0.1, 1.0과의 10%p 이상 차이는 우연으로 보기 어렵다.</li>
+<li>SuperLink 서버가 실험 도중 AWS에서 Oracle Cloud로 바뀌었다. 코드, 시드, 초기 정확도는 같지만 완전히 같은 환경은 아니다.</li>
+<li>클라이언트가 2개뿐이고 매 라운드 전원 참여했다. FedProx가 원래 노리는 시스템 이질성(노드마다 다른 학습량, 부분 참여, 지연 노드)은 다루지 않았다.</li>
+<li>모델이 작고 라운드 수가 적어서 정확도 절대값이 낮다 (최고 55.5%).</li>
 </ul>
 
 <h2>6. 결론 및 다음 실험</h2>
-<p>이번 설정(노드 2개, 전원 참여, 10라운드, μ=0.1)에서는 정확도 기준으로 FedAvg가 FedProx보다 약 10%p 높았다. 대신 FedAvg는 4라운드 이후 손실이 25% 다시 올랐고, FedProx는 손실이 거의 오르지 않았다. 따라서 FedProx의 장점을 확인하려면 μ를 더 작게 잡고, 라운드를 늘려서 다시 비교해야 한다.</p>
+<p>이번 설정(노드 2개, 전원 참여, 10라운드)에서는 <b>FedProx(μ=0.01)가 FedAvg보다 최종 정확도가 2.59%p 높고 손실도 더 안정적이었다.</b> μ=0.1 이상은 근접항이 너무 세서 정확도가 크게 떨어졌다. 따라서 이 모델에서 FedProx를 쓴다면 μ를 0.01 근처의 작은 값으로 잡아야 한다.</p>
 <ul>
-<li>중단된 μ=0.01, μ=1.0 실행을 마친다. μ=0.01은 FedAvg에 가까운 속도를 내면서 손실 상승을 줄일 수 있는지 확인하는 용도다.</li>
-<li>라운드를 30회 이상으로 늘려서, FedAvg의 드리프트가 정확도 하락으로 이어지는지 본다.</li>
-<li>시드 3개 이상으로 반복해서 평균과 표준편차를 보고한다.</li>
+<li>시드 3개 이상으로 FedAvg와 μ=0.01을 반복해서, 2–3%p 차이가 실제 차이인지 평균과 표준편차로 확인한다.</li>
+<li>μ=0.001, 0.005, 0.02, 0.05를 추가해서 최적 μ 구간을 더 좁힌다.</li>
+<li>라운드를 30회 이상으로 늘려서 FedAvg의 드리프트가 정확도 하락으로 이어지는지 본다.</li>
 <li>노드별 local epoch를 다르게 주는(예: 1 vs 5) 시스템 이질성 조건을 추가한다.</li>
 </ul>
 
-<p class="cap" style="margin-top:14px">원자료: <code>~/FL/NonIID/results/noniid_fedavg.json</code>, <code>noniid_fedprox_mu0.1.json</code> · 그래프 코드: <code>~/FL/NonIID/plot_compare.py</code> · 라벨 분포: <code>fedcompare.task.label_hist</code>로 재계산</p>
+<p class="cap" style="margin-top:14px">원자료: <code>~/FL/NonIID/results/noniid_fedavg.json</code>, <code>noniid_fedprox_mu0.01.json</code>, <code>noniid_fedprox_mu0.1.json</code>, <code>noniid_fedprox_mu1.json</code> · 그래프 코드: <code>~/FL/NonIID/plot_compare.py</code> · 라벨 분포: <code>fedcompare.task.label_hist</code>로 재계산</p>
 </body></html>

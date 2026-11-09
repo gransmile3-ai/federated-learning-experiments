@@ -1,4 +1,4 @@
-"""Non-IID(Dirichlet α=0.3) FedAvg vs FedProx(μ=0.1) 비교 그래프."""
+"""Non-IID(Dirichlet α=0.3) FedAvg vs FedProx(μ=0.01/0.1/1.0) 비교 그래프."""
 import json
 from pathlib import Path
 
@@ -15,9 +15,11 @@ plt.rcParams["axes.unicode_minus"] = False
 
 runs = {
     "FedAvg": json.loads((HERE / "results/noniid_fedavg.json").read_text()),
+    "FedProx (μ=0.01)": json.loads((HERE / "results/noniid_fedprox_mu0.01.json").read_text()),
     "FedProx (μ=0.1)": json.loads((HERE / "results/noniid_fedprox_mu0.1.json").read_text()),
+    "FedProx (μ=1.0)": json.loads((HERE / "results/noniid_fedprox_mu1.json").read_text()),
 }
-colors = {"FedAvg": "#2a78d6", "FedProx (μ=0.1)": "#eb6834"}
+colors = {"FedAvg": "#2a78d6", "FedProx (μ=0.01)": "#1f9e6a", "FedProx (μ=0.1)": "#eb6834", "FedProx (μ=1.0)": "#9b59b6"}
 
 
 def series(d, key, metric):
@@ -42,10 +44,7 @@ for name, d in runs.items():
     xs, ys = series(d, "server_eval", "accuracy")
     ys = [y * 100 for y in ys]
     axs[0, 0].plot(xs, ys, "o-", color=c, lw=2, label=name)
-    best = max(range(len(ys)), key=ys.__getitem__)
-    axs[0, 0].annotate(f"최고 {ys[best]:.2f}% (R{xs[best]})", (xs[best], ys[best]), xytext=(0, 8),
-                       textcoords="offset points", ha="center", fontsize=8, color=c)
-    axs[0, 0].annotate(f"{ys[-1]:.2f}%", (xs[-1], ys[-1]), xytext=(6, 0), textcoords="offset points",
+    axs[0, 0].annotate(f"{ys[-1]:.1f}%", (xs[-1], ys[-1]), xytext=(6, 0), textcoords="offset points",
                        va="center", fontsize=9, color=c)
     xs, ys = series(d, "server_eval", "loss")
     axs[0, 1].plot(xs, ys, "o-", color=c, lw=2, label=name)
@@ -61,10 +60,15 @@ style(axs[1, 0], "클라이언트 로컬 평가 정확도 (가중 평균)", "acc
 style(axs[1, 1], "클라이언트 학습 손실 (FedProx는 근접항 포함)", "train loss")
 for ax in axs.flat:
     ax.set_xticks(range(0, 11))
-axs[0, 0].set_ylim(5, 60)
-fig.suptitle("FedAvg vs FedProx · Non-IID (Dirichlet α=0.3) · AWS SuperLink + Mac/Desktop SuperNode",
+axs[0, 0].set_ylim(5, 62)
+axs[0, 0].set_xlim(-0.3, 11)
+fig.suptitle("FedAvg vs FedProx (μ=0.01 / 0.1 / 1.0) · Non-IID (Dirichlet α=0.3) · Mac/Desktop SuperNode",
              x=0.01, ha="left", fontweight="bold")
-fig.tight_layout()
+h, l = axs[0, 0].get_legend_handles_labels()
+for ax in axs.flat:
+    ax.get_legend().remove()
+fig.legend(h, l, loc="lower center", ncol=4, frameon=False, fontsize=10)
+fig.tight_layout(rect=(0, 0.045, 1, 1))
 fig.savefig(OUT / "noniid_compare.png", bbox_inches="tight")
 plt.close(fig)
 
