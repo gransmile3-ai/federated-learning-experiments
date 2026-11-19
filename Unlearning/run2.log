@@ -1,0 +1,16 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+== ga_stop(loss>=2.30) steps=80: test 0.4629 forget_train 0.4666 retain_test 0.5314 MIA 0.572 cost 0.14232501250903432 ep 1s
+== ga_stop(loss>=2.30)+repair1: test 0.4326 forget_train 0.2204 retain_test 0.6170 MIA 0.523 cost 3.1423250125090343 ep 9s
+== ga_stop(loss>=2.30)+repair2: test 0.4415 forget_train 0.2233 retain_test 0.6295 MIA 0.515 cost 6.142325012509034 ep 17s
+== ga_stop(loss>=2.30)+repair3: test 0.4343 forget_train 0.2109 retain_test 0.6228 MIA 0.521 cost 9.142325012509035 ep 25s
+== ga_stop(loss>=2.30)+repair5: test 0.4274 forget_train 0.1945 retain_test 0.6183 MIA 0.514 cost 15.142325012509035 ep 42s
+== ga_stop(loss>=3.00) steps=110: test 0.4390 forget_train 0.3905 retain_test 0.5349 MIA 0.563 cost 0.19569689219992217 ep 2s
+== ga_stop(loss>=3.00)+repair1: test 0.4434 forget_train 0.2464 retain_test 0.6217 MIA 0.523 cost 3.1956968921999223 ep 11s
+== ga_stop(loss>=3.00)+repair2: test 0.4369 forget_train 0.2259 retain_test 0.6230 MIA 0.512 cost 6.195696892199922 ep 21s
+== ga_stop(loss>=3.00)+repair3: test 0.4318 forget_train 0.1912 retain_test 0.6225 MIA 0.521 cost 9.195696892199923 ep 33s
+== ga_stop(loss>=3.00)+repair5: test 0.4361 forget_train 0.2064 retain_test 0.6201 MIA 0.508 cost 15.195696892199923 ep 54s
+== federaser alpha=0.5 dt=1 e_cal=1: test 0.3869 forget_train 0.1186 retain_test 0.6079 MIA 0.502 cost 20 ep 71s
+== federaser alpha=0.25 dt=1 e_cal=1: test 0.4268 forget_train 0.1688 retain_test 0.6437 MIA 0.502 cost 20 ep 79s
+== federaser alpha=0.5 dt=2 e_cal=2: test 0.3557 forget_train 0.1032 retain_test 0.5803 MIA 0.502 cost 20 ep 77s
+== federaser alpha=0.0 dt=2 e_cal=2: test 0.4109 forget_train 0.1560 retain_test 0.6230 MIA 0.503 cost 20 ep 108s
+saved stage 2

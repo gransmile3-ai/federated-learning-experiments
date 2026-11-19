@@ -1,0 +1,188 @@
+[
+ {
+  "seed": 0,
+  "idx_info": {
+   "single_slice": 4,
+   "5pct_min_slice": 1
+  },
+  "cost_single": 0.5999740543746178,
+  "cost_5pct": 0.9500176059600808,
+  "desktop_full_s": 48.03863573074341,
+  "mac_full_s": 51.546467781066895,
+  "full_ens": {
+   "test_acc": 0.5462999939918518,
+   "desktop_train_acc": 0.7815088629722595,
+   "mac_test_acc": 0.5076308250427246,
+   "mia_client": 0.6212074573076638,
+   "del_acc": 0.7630701065063477,
+   "del_loss": 0.7964659929275513,
+   "mia_del": 0.6245290466109297
+  },
+  "drop_desktop": {
+   "test_acc": 0.4156999886035919,
+   "desktop_train_acc": 0.16189470887184143,
+   "mac_test_acc": 0.6133720874786377,
+   "mia_client": 0.5011748251706757,
+   "del_acc": 0.1535038948059082,
+   "del_loss": 5.659121513366699,
+   "mia_del": 0.5209459033087066
+  },
+  "desktop_only": {
+   "test_acc": 0.414000004529953,
+   "desktop_train_acc": 0.9109356999397278,
+   "mac_test_acc": 0.205850288271904,
+   "mia_client": 0.6261226506896179
+  },
+  "ens_del_single": {
+   "test_acc": 0.5479999780654907,
+   "desktop_train_acc": 0.7829543352127075,
+   "mac_test_acc": 0.5041787624359131,
+   "mia_client": 0.6179372219040203,
+   "del_acc": 1.0,
+   "del_loss": 0.7156477570533752,
+   "mia_del": null
+  },
+  "ens_del_5pct": {
+   "test_acc": 0.5447999835014343,
+   "desktop_train_acc": 0.7644410133361816,
+   "mac_test_acc": 0.5178052186965942,
+   "mia_client": 0.6260637573765605,
+   "del_acc": 0.5372636318206787,
+   "del_loss": 1.5964785814285278,
+   "mia_del": 0.5148150027035354
+  },
+  "full_ens_on_single": {
+   "test_acc": 0.5462999939918518,
+   "desktop_train_acc": 0.7815088629722595,
+   "mac_test_acc": 0.5076308250427246,
+   "mia_client": 0.6212074573076638,
+   "del_acc": 1.0,
+   "del_loss": 0.7014198303222656,
+   "mia_del": null
+  }
+ },
+ {
+  "seed": 1,
+  "idx_info": {
+   "single_slice": 4,
+   "5pct_min_slice": 1
+  },
+  "cost_single": 0.5999740543746178,
+  "cost_5pct": 0.9500176059600808,
+  "desktop_full_s": 29.64295983314514,
+  "mac_full_s": 51.43051600456238,
+  "full_ens": {
+   "test_acc": 0.5246999859809875,
+   "desktop_train_acc": 0.7363095283508301,
+   "mac_test_acc": 0.5032703280448914,
+   "mia_client": 0.618412967130658,
+   "del_acc": 0.7408231496810913,
+   "del_loss": 0.9157723188400269,
+   "mia_del": 0.6176557564269285
+  },
+  "drop_desktop": {
+   "test_acc": 0.39089998602867126,
+   "desktop_train_acc": 0.14032356441020966,
+   "mac_test_acc": 0.6108284592628479,
+   "mia_client": 0.500185753761965,
+   "del_acc": 0.12124583125114441,
+   "del_loss": 5.570562362670898,
+   "mia_del": 0.519480921206482
+  },
+  "desktop_only": {
+   "test_acc": 0.3856000006198883,
+   "desktop_train_acc": 0.8646800518035889,
+   "mac_test_acc": 0.17732557654380798,
+   "mia_client": 0.6191261152086714
+  },
+  "ens_del_single": {
+   "test_acc": 0.5346999764442444,
+   "desktop_train_acc": 0.7662756443023682,
+   "mac_test_acc": 0.5045421719551086,
+   "mia_client": 0.6208533556999356,
+   "del_acc": 1.0,
+   "del_loss": 0.6911731362342834,
+   "mia_del": null
+  },
+  "ens_del_5pct": {
+   "test_acc": 0.5339999794960022,
+   "desktop_train_acc": 0.7872352004051208,
+   "mac_test_acc": 0.4989098906517029,
+   "mia_client": 0.6142587386476464,
+   "del_acc": 0.5995550751686096,
+   "del_loss": 1.5578254461288452,
+   "mia_del": 0.5130406916101317
+  },
+  "full_ens_on_single": {
+   "test_acc": 0.5246999859809875,
+   "desktop_train_acc": 0.7363095283508301,
+   "mac_test_acc": 0.5032703280448914,
+   "mia_client": 0.618412967130658,
+   "del_acc": 1.0,
+   "del_loss": 0.6911576390266418,
+   "mia_del": null
+  }
+ },
+ {
+  "seed": 2,
+  "idx_info": {
+   "single_slice": 4,
+   "5pct_min_slice": 1
+  },
+  "cost_single": 0.5999740543746178,
+  "cost_5pct": 0.9500176059600808,
+  "desktop_full_s": 39.22924518585205,
+  "mac_full_s": 51.748558044433594,
+  "full_ens": {
+   "test_acc": 0.5260999798774719,
+   "desktop_train_acc": 0.779451847076416,
+   "mac_test_acc": 0.4987281858921051,
+   "mia_client": 0.6206071015445822,
+   "del_acc": 0.8064516186714172,
+   "del_loss": 0.8038318753242493,
+   "mia_del": 0.6462303313160959
+  },
+  "drop_desktop": {
+   "test_acc": 0.4027000069618225,
+   "desktop_train_acc": 0.15605714917182922,
+   "mac_test_acc": 0.6017441749572754,
+   "mia_client": 0.4988721015749931,
+   "del_acc": 0.14794215559959412,
+   "del_loss": 5.471579551696777,
+   "mia_del": 0.5017947268068216
+  },
+  "desktop_only": {
+   "test_acc": 0.4034000039100647,
+   "desktop_train_acc": 0.9014288187026978,
+   "mac_test_acc": 0.20875726640224457,
+   "mia_client": 0.6263148574972202
+  },
+  "ens_del_single": {
+   "test_acc": 0.527400016784668,
+   "desktop_train_acc": 0.7713348269462585,
+   "mac_test_acc": 0.4832848906517029,
+   "mia_client": 0.6198848054708377,
+   "del_acc": 0.0,
+   "del_loss": 4.207824230194092,
+   "mia_del": null
+  },
+  "ens_del_5pct": {
+   "test_acc": 0.5357000231742859,
+   "desktop_train_acc": 0.7833435535430908,
+   "mac_test_acc": 0.4736555218696594,
+   "mia_client": 0.6082409892612914,
+   "del_acc": 0.6462736129760742,
+   "del_loss": 1.390856385231018,
+   "mia_del": 0.5259595075977387
+  },
+  "full_ens_on_single": {
+   "test_acc": 0.5260999798774719,
+   "desktop_train_acc": 0.779451847076416,
+   "mac_test_acc": 0.4987281858921051,
+   "mia_client": 0.6206071015445822,
+   "del_acc": 1.0,
+   "del_loss": 0.7250420451164246,
+   "mia_del": null
+  }
+ }
+]

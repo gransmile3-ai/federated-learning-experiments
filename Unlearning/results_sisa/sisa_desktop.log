@@ -1,0 +1,41 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+shard 0: 17987 train samples, labels [1488, 2, 115, 3066, 750, 483, 3986, 3756, 3921, 420]
+  [full] slice 1/5 n=3597 20.7s
+  [full] slice 2/5 n=7194 3.4s
+  [full] slice 3/5 n=10792 6.6s
+  [full] slice 4/5 n=14389 6.0s
+  [full] slice 5/5 n=17987 11.4s
+  [del_single] slice 4/5 n=14388 7.4s
+  [del_single] slice 5/5 n=17986 7.1s
+  [del_5pct] slice 1/5 n=3417 1.3s
+  [del_5pct] slice 2/5 n=6835 3.0s
+  [del_5pct] slice 3/5 n=10252 4.5s
+  [del_5pct] slice 4/5 n=13670 6.3s
+  [del_5pct] slice 5/5 n=17088 9.5s
+seed 0 done: full 48s single 15s 5pct 25s
+  [full] slice 1/5 n=3597 1.3s
+  [full] slice 2/5 n=7194 3.9s
+  [full] slice 3/5 n=10792 5.2s
+  [full] slice 4/5 n=14389 9.6s
+  [full] slice 5/5 n=17987 9.6s
+  [del_single] slice 4/5 n=14388 5.8s
+  [del_single] slice 5/5 n=17986 7.8s
+  [del_5pct] slice 1/5 n=3417 1.4s
+  [del_5pct] slice 2/5 n=6835 3.8s
+  [del_5pct] slice 3/5 n=10252 7.6s
+  [del_5pct] slice 4/5 n=13670 5.7s
+  [del_5pct] slice 5/5 n=17088 8.4s
+seed 1 done: full 30s single 14s 5pct 27s
+  [full] slice 1/5 n=3597 2.1s
+  [full] slice 2/5 n=7194 3.5s
+  [full] slice 3/5 n=10792 8.5s
+  [full] slice 4/5 n=14389 16.6s
+  [full] slice 5/5 n=17987 8.6s
+  [del_single] slice 4/5 n=14388 7.6s
+  [del_single] slice 5/5 n=17986 8.4s
+  [del_5pct] slice 1/5 n=3417 1.4s
+  [del_5pct] slice 2/5 n=6835 4.5s
+  [del_5pct] slice 3/5 n=10252 4.5s
+  [del_5pct] slice 4/5 n=13670 8.1s
+  [del_5pct] slice 5/5 n=17088 8.0s
+seed 2 done: full 39s single 16s 5pct 26s
