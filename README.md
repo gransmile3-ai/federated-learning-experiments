@@ -51,7 +51,9 @@ pip install -e NonIID   # 실행할 실험 폴더 지정
 
 같은 설정(CIFAR-10, Dirichlet α=0.3, 클라이언트 2개)에서 데스크탑 클라이언트를 모델에서 지우는 방법을 비교했다. 기준선은 Mac만으로 처음부터 다시 학습한 모델. 자세한 내용은 [`Unlearning/README.md`](Unlearning/README.md).
 
-![언러닝 비교](Unlearning/compare.png)
+![언러닝 비교](Unlearning/compare_all.png)
+
+![비용 vs 잊은 정도](Unlearning/tradeoff.png)
 
 | 방법 | 테스트 정확도 | 데스크탑 데이터 정확도 | MIA AUC | 재학습 비용 (local epoch) |
 |---|---|---|---|---|
