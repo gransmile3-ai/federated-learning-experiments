@@ -64,3 +64,11 @@ pip install -e NonIID   # 실행할 실험 폴더 지정
 | SISA (샤드=클라이언트, 샤드 제거, 3시드 평균) | 0.403 | 0.153 | 0.500 | 0 |
 
 Gradient ascent만 쓰면 모델이 붕괴하거나 거의 잊지 못하고, 원본 FedEraser는 라벨 편향에서 발산한다. 단일 시드(SISA만 3시드), 클라이언트 2개 설정이라는 한계가 있다.
+
+## 주요 결과 4: SISA on SVHN (논문 데이터셋)
+
+SISA 논문(Bourtoule et al.)이 쓴 SVHN으로 샤드 수(5/10/20)별 정확도와 삭제 후 재학습 비용을 비교했다 (맥북, 3시드). 자세한 내용은 [`Unlearning/README.md`](Unlearning/README.md).
+
+![SVHN SISA](Unlearning/svhn_sisa.png)
+
+샘플 1개 삭제는 샤드 수가 많을수록 빨라지지만(최대 약 24배) 10개 이상이면 대부분의 샤드가 걸려 이득이 사라진다. 샤드가 많을수록 앙상블 정확도는 내려가며, S=20의 큰 하락은 샤드당 학습량 부족 때문이었다(epoch 10으로 늘리면 0.857).

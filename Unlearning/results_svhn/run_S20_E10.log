@@ -1,0 +1,8 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+train 73257 test 26032
+[seed 0] naive test 0.8909 77s
+[seed 0] S=20 ensemble test 0.8570 full 341s
+  K=1: shards hit 1/20 cost 0.05 of SISA-full, test 0.8575
+  K=10: shards hit 10/20 cost 0.39 of SISA-full, test 0.8553
+  K=100: shards hit 20/20 cost 0.95 of SISA-full, test 0.8566
+done

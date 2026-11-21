@@ -1,0 +1,42 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+train 73257 test 26032
+[seed 0] naive test 0.8909 77s
+[seed 0] S=5 ensemble test 0.8666 full 78s
+  K=1: shards hit 1/5 cost 0.20 of SISA-full, test 0.8660
+  K=10: shards hit 5/5 cost 0.83 of SISA-full, test 0.8667
+  K=100: shards hit 5/5 cost 1.00 of SISA-full, test 0.8682
+[seed 0] S=10 ensemble test 0.8328 full 77s
+  K=1: shards hit 1/10 cost 0.10 of SISA-full, test 0.8326
+  K=10: shards hit 8/10 cost 0.62 of SISA-full, test 0.8318
+  K=100: shards hit 10/10 cost 0.99 of SISA-full, test 0.8303
+[seed 0] S=20 ensemble test 0.3727 full 78s
+  K=1: shards hit 1/20 cost 0.05 of SISA-full, test 0.3705
+  K=10: shards hit 10/20 cost 0.39 of SISA-full, test 0.3710
+  K=100: shards hit 20/20 cost 0.95 of SISA-full, test 0.3725
+[seed 1] naive test 0.8897 77s
+[seed 1] S=5 ensemble test 0.8715 full 80s
+  K=1: shards hit 1/5 cost 0.12 of SISA-full, test 0.8705
+  K=10: shards hit 5/5 cost 0.87 of SISA-full, test 0.8704
+  K=100: shards hit 5/5 cost 1.00 of SISA-full, test 0.8695
+[seed 1] S=10 ensemble test 0.8355 full 83s
+  K=1: shards hit 1/10 cost 0.06 of SISA-full, test 0.8371
+  K=10: shards hit 8/10 cost 0.61 of SISA-full, test 0.8397
+  K=100: shards hit 10/10 cost 0.99 of SISA-full, test 0.8389
+[seed 1] S=20 ensemble test 0.4645 full 81s
+  K=1: shards hit 1/20 cost 0.03 of SISA-full, test 0.4654
+  K=10: shards hit 9/20 cost 0.35 of SISA-full, test 0.4677
+  K=100: shards hit 20/20 cost 0.94 of SISA-full, test 0.4610
+[seed 2] naive test 0.8823 82s
+[seed 2] S=5 ensemble test 0.8674 full 81s
+  K=1: shards hit 1/5 cost 0.20 of SISA-full, test 0.8667
+  K=10: shards hit 4/5 cost 0.75 of SISA-full, test 0.8628
+  K=100: shards hit 5/5 cost 1.00 of SISA-full, test 0.8664
+[seed 2] S=10 ensemble test 0.8212 full 82s
+  K=1: shards hit 1/10 cost 0.10 of SISA-full, test 0.8224
+  K=10: shards hit 7/10 cost 0.60 of SISA-full, test 0.8213
+  K=100: shards hit 10/10 cost 1.00 of SISA-full, test 0.8195
+[seed 2] S=20 ensemble test 0.2076 full 82s
+  K=1: shards hit 1/20 cost 0.05 of SISA-full, test 0.2077
+  K=10: shards hit 9/20 cost 0.36 of SISA-full, test 0.2137
+  K=100: shards hit 20/20 cost 0.93 of SISA-full, test 0.2150
+done

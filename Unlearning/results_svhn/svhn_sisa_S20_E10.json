@@ -1,0 +1,65 @@
+[
+ {
+  "seed": 0,
+  "N": 73257,
+  "R": 5,
+  "E": 10,
+  "naive": {
+   "test_acc": 0.8909419178962708,
+   "sample_passes": 659313,
+   "seconds": 76.97096180915833
+  },
+  "naive_del": {
+   "1": {
+    "test_acc": 0.88368159532547,
+    "sample_passes": 659304,
+    "seconds": 92.94455194473267
+   },
+   "10": {
+    "test_acc": 0.8915565609931946,
+    "sample_passes": 659223,
+    "seconds": 109.59661984443665
+   },
+   "100": {
+    "test_acc": 0.8872157335281372,
+    "sample_passes": 658413,
+    "seconds": 100.04849815368652
+   }
+  },
+  "sisa": {
+   "20": {
+    "full": {
+     "test_acc": 0.8569837212562561,
+     "sample_passes": 2197310,
+     "seconds": 340.7198712825775
+    },
+    "del": {
+     "1": {
+      "test_acc": 0.8574830889701843,
+      "sample_passes": 109840,
+      "seconds": 17.386285066604614,
+      "shards_hit": 1,
+      "cost_vs_full": 0.04998839490103809,
+      "speedup_vs_naive": 6.002403495994173
+     },
+     "10": {
+      "test_acc": 0.8552935123443604,
+      "sample_passes": 849410,
+      "seconds": 131.6299171447754,
+      "shards_hit": 10,
+      "cost_vs_full": 0.38656812193090645,
+      "speedup_vs_naive": 0.776095171942878
+     },
+     "100": {
+      "test_acc": 0.8566379547119141,
+      "sample_passes": 2091970,
+      "seconds": 271.2061867713928,
+      "shards_hit": 20,
+      "cost_vs_full": 0.9520595637392995,
+      "speedup_vs_naive": 0.314733480881657
+     }
+    }
+   }
+  }
+ }
+]
