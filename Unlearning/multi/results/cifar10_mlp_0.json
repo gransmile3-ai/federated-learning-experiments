@@ -1,0 +1,226 @@
+{
+ "dataset": "cifar10",
+ "model": "mlp",
+ "seed": 0,
+ "N": 50000,
+ "nc": 10,
+ "scen": {
+  "rand": {
+   "original": {
+    "name": "original",
+    "test_acc": 0.5340999960899353,
+    "forget_acc": 0.6740000247955322,
+    "retain_acc": 0.6358000040054321,
+    "test_forgetclass_acc": 0.3009999990463257,
+    "test_otherclass_acc": 0.5600000023841858,
+    "forget_loss": 0.9901076555252075,
+    "cost_sample_passes": 300000,
+    "seconds": 1.8100359439849854,
+    "mia_auc": 0.584236
+   },
+   "retrain": {
+    "name": "retrain",
+    "test_acc": 0.535099983215332,
+    "forget_acc": 0.5879999995231628,
+    "retain_acc": 0.6302000284194946,
+    "test_forgetclass_acc": 0.3880000114440918,
+    "test_otherclass_acc": 0.5514444708824158,
+    "forget_loss": 1.250250220298767,
+    "cost_sample_passes": 294000,
+    "seconds": 1.7142798900604248,
+    "mia_auc": 0.51893
+   },
+   "ga_stop": [
+    {
+     "name": "ga lr=0.001",
+     "test_acc": 0.36899998784065247,
+     "forget_acc": 0.42500001192092896,
+     "retain_acc": 0.40540000796318054,
+     "test_forgetclass_acc": 0.12600000202655792,
+     "test_otherclass_acc": 0.3959999978542328,
+     "forget_loss": 2.3332979679107666,
+     "cost_sample_passes": 17920,
+     "seconds": 0.1622447967529297,
+     "mia_auc": 0.548683,
+     "lr": 0.001,
+     "steps": 140
+    },
+    {
+     "name": "ga lr=0.003",
+     "test_acc": 0.3449999988079071,
+     "forget_acc": 0.38999998569488525,
+     "retain_acc": 0.37400001287460327,
+     "test_forgetclass_acc": 0.11299999803304672,
+     "test_otherclass_acc": 0.37077778577804565,
+     "forget_loss": 2.9371769428253174,
+     "cost_sample_passes": 6400,
+     "seconds": 0.052546024322509766,
+     "mia_auc": 0.540991,
+     "lr": 0.003,
+     "steps": 50
+    }
+   ],
+   "ga_repair": [
+    {
+     "name": "ga+repair lr=0.001",
+     "test_acc": 0.5285999774932861,
+     "forget_acc": 0.6389999985694885,
+     "retain_acc": 0.6258000135421753,
+     "test_forgetclass_acc": 0.3140000104904175,
+     "test_otherclass_acc": 0.5524444580078125,
+     "forget_loss": 1.065973162651062,
+     "cost_sample_passes": 22920,
+     "seconds": 0.21078777313232422,
+     "mia_auc": 0.567272,
+     "lr": 0.001,
+     "steps": 140
+    },
+    {
+     "name": "ga+repair lr=0.003",
+     "test_acc": 0.527999997138977,
+     "forget_acc": 0.6389999985694885,
+     "retain_acc": 0.6205999851226807,
+     "test_forgetclass_acc": 0.335999995470047,
+     "test_otherclass_acc": 0.5493333339691162,
+     "forget_loss": 1.0832090377807617,
+     "cost_sample_passes": 11400,
+     "seconds": 0.07440519332885742,
+     "mia_auc": 0.566879,
+     "lr": 0.003,
+     "steps": 50
+    }
+   ],
+   "sisa_before": {
+    "name": "sisa before",
+    "test_acc": 0.47850000858306885,
+    "forget_acc": 0.5249999761581421,
+    "retain_acc": 0.4927999973297119,
+    "test_forgetclass_acc": 0.31700000166893005,
+    "test_otherclass_acc": 0.496444433927536,
+    "forget_loss": 1.375051498413086,
+    "cost_sample_passes": 300000,
+    "seconds": 1.9374771118164062,
+    "mia_auc": 0.528866
+   },
+   "sisa_after": {
+    "name": "sisa after",
+    "test_acc": 0.475600004196167,
+    "forget_acc": 0.5,
+    "retain_acc": 0.48420000076293945,
+    "test_forgetclass_acc": 0.2669999897480011,
+    "test_otherclass_acc": 0.4987777769565582,
+    "forget_loss": 1.4277576208114624,
+    "cost_sample_passes": 293992,
+    "seconds": 2.2007219791412354,
+    "mia_auc": 0.516087,
+    "shards_hit": 5
+   }
+  },
+  "cls": {
+   "original": {
+    "name": "original",
+    "test_acc": 0.5340999960899353,
+    "forget_acc": 0.41200000047683716,
+    "retain_acc": 0.6547999978065491,
+    "test_forgetclass_acc": 0.3009999990463257,
+    "test_otherclass_acc": 0.5600000023841858,
+    "forget_loss": 1.4922287464141846,
+    "cost_sample_passes": 300000,
+    "seconds": 1.8100359439849854
+   },
+   "retrain": {
+    "name": "retrain",
+    "test_acc": 0.5182999968528748,
+    "forget_acc": 0.0,
+    "retain_acc": 0.6690000295639038,
+    "test_forgetclass_acc": 0.0,
+    "test_otherclass_acc": 0.5758888721466064,
+    "forget_loss": 9.64070987701416,
+    "cost_sample_passes": 270000,
+    "seconds": 1.5837218761444092
+   },
+   "ga_stop": [
+    {
+     "name": "ga lr=0.001",
+     "test_acc": 0.5202999711036682,
+     "forget_acc": 0.09139999747276306,
+     "retain_acc": 0.6607999801635742,
+     "test_forgetclass_acc": 0.06499999761581421,
+     "test_otherclass_acc": 0.570888876914978,
+     "forget_loss": 2.3775031566619873,
+     "cost_sample_passes": 1920,
+     "seconds": 0.021631240844726562,
+     "lr": 0.001,
+     "steps": 15
+    },
+    {
+     "name": "ga lr=0.003",
+     "test_acc": 0.5205000042915344,
+     "forget_acc": 0.09059999883174896,
+     "retain_acc": 0.6621999740600586,
+     "test_forgetclass_acc": 0.06499999761581421,
+     "test_otherclass_acc": 0.5711110830307007,
+     "forget_loss": 2.3801326751708984,
+     "cost_sample_passes": 640,
+     "seconds": 0.011054039001464844,
+     "lr": 0.003,
+     "steps": 5
+    }
+   ],
+   "ga_repair": [
+    {
+     "name": "ga+repair lr=0.001",
+     "test_acc": 0.5206000208854675,
+     "forget_acc": 0.0,
+     "retain_acc": 0.6704000234603882,
+     "test_forgetclass_acc": 0.0,
+     "test_otherclass_acc": 0.5784444212913513,
+     "forget_loss": 4.755931854248047,
+     "cost_sample_passes": 6920,
+     "seconds": 0.05228018760681152,
+     "lr": 0.001,
+     "steps": 15
+    },
+    {
+     "name": "ga+repair lr=0.003",
+     "test_acc": 0.5210000276565552,
+     "forget_acc": 0.0,
+     "retain_acc": 0.6711999773979187,
+     "test_forgetclass_acc": 0.0,
+     "test_otherclass_acc": 0.5788888931274414,
+     "forget_loss": 4.731341361999512,
+     "cost_sample_passes": 5640,
+     "seconds": 0.039572954177856445,
+     "lr": 0.003,
+     "steps": 5
+    }
+   ],
+   "sisa_before": {
+    "name": "sisa before",
+    "test_acc": 0.47850000858306885,
+    "forget_acc": 0.350600004196167,
+    "retain_acc": 0.5059999823570251,
+    "test_forgetclass_acc": 0.31700000166893005,
+    "test_otherclass_acc": 0.496444433927536,
+    "forget_loss": 1.7056092023849487,
+    "cost_sample_passes": 300000,
+    "seconds": 1.9374771118164062
+   },
+   "sisa_after": {
+    "name": "sisa after",
+    "test_acc": 0.46650001406669617,
+    "forget_acc": 0.0,
+    "retain_acc": 0.526199996471405,
+    "test_forgetclass_acc": 0.0,
+    "test_otherclass_acc": 0.5183333158493042,
+    "forget_loss": 8.376420021057129,
+    "cost_sample_passes": 269984,
+    "seconds": 2.0496902465820312,
+    "shards_hit": 5
+   }
+  }
+ },
+ "orig_seconds": 1.8100359439849854,
+ "sisa_full_seconds": 1.9374771118164062,
+ "total_seconds": 23.1651668548584
+}

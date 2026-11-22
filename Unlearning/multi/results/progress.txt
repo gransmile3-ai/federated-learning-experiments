@@ -1,0 +1,120 @@
+16:09:29 mnist/cnn/s0 rc=0 55s
+[mnist/cnn/s0/rand] orig t0.985 f0.995 | retrain t0.988 f0.991 | ga t0.247 f0.228 | ga+rep t0.914 f0.923 | sisa t0.979 f0.979
+[mnist/cnn/s0/cls] orig t0.985 f0.993 | retrain t0.890 f0.000 | ga t0.829 f0.001 | ga+rep t0.978 f0.871 | sisa t0.881 f0.000
+16:10:39 svhn/cnn/s0 rc=0 70s
+[svhn/cnn/s0/rand] orig t0.869 f0.889 | retrain t0.877 f0.872 | ga t0.441 f0.435 | ga+rep t0.855 f0.854 | sisa t0.737 f0.715
+[svhn/cnn/s0/cls] orig t0.869 f0.874 | retrain t0.791 f0.000 | ga t0.747 f0.124 | ga+rep t0.836 f0.472 | sisa t0.625 f0.000
+16:11:25 cifar10/cnn/s0 rc=0 46s
+[cifar10/cnn/s0/rand] orig t0.586 f0.635 | retrain t0.595 f0.611 | ga t0.328 f0.358 | ga+rep t0.541 f0.570 | sisa t0.396 f0.407
+[cifar10/cnn/s0/cls] orig t0.586 f0.348 | retrain t0.569 f0.000 | ga t0.560 f0.074 | ga+rep t0.571 f0.000 | sisa t0.389 f0.000
+16:12:21 cifar100/cnn/s0 rc=0 56s
+[cifar100/cnn/s0/rand] orig t0.223 f0.229 | retrain t0.216 f0.208 | ga t0.074 f0.086 | ga+rep t0.193 f0.209 | sisa t0.040 f0.039
+[cifar100/cnn/s0/cls] orig t0.223 f0.116 | retrain t0.231 f0.000 | ga t0.204 f0.000 | ga+rep t0.226 f0.000 | sisa t0.043 f0.000
+16:12:50 mnist/mlp/s0 rc=0 29s
+[mnist/mlp/s0/rand] orig t0.969 f0.978 | retrain t0.971 f0.971 | ga t0.373 f0.366 | ga+rep t0.912 f0.926 | sisa t0.942 f0.941
+[mnist/mlp/s0/cls] orig t0.969 f0.948 | retrain t0.867 f0.000 | ga t0.845 f0.219 | ga+rep t0.966 f0.883 | sisa t0.850 f0.000
+16:13:27 svhn/mlp/s0 rc=0 37s
+[svhn/mlp/s0/rand] orig t0.811 f0.835 | retrain t0.787 f0.796 | ga t0.575 f0.587 | ga+rep t0.792 f0.813 | sisa t0.672 f0.684
+[svhn/mlp/s0/cls] orig t0.811 f0.813 | retrain t0.727 f0.000 | ga t0.602 f0.375 | ga+rep t0.707 f0.276 | sisa t0.628 f0.000
+16:13:52 cifar10/mlp/s0 rc=0 25s
+[cifar10/mlp/s0/rand] orig t0.534 f0.674 | retrain t0.535 f0.588 | ga t0.369 f0.425 | ga+rep t0.529 f0.639 | sisa t0.476 f0.500
+[cifar10/mlp/s0/cls] orig t0.534 f0.412 | retrain t0.518 f0.000 | ga t0.520 f0.091 | ga+rep t0.521 f0.000 | sisa t0.467 f0.000
+16:14:17 cifar100/mlp/s0 rc=0 25s
+[cifar100/mlp/s0/rand] orig t0.240 f0.281 | retrain t0.242 f0.249 | ga t0.117 f0.132 | ga+rep t0.239 f0.257 | sisa t0.158 f0.163
+[cifar100/mlp/s0/cls] orig t0.240 f0.210 | retrain t0.240 f0.000 | ga t0.237 f0.000 | ga+rep t0.240 f0.000 | sisa t0.160 f0.000
+16:25:46 mnist/vit/s0 rc=0 689s
+[mnist/vit/s0/rand] orig t0.967 f0.967 | retrain t0.973 f0.976 | ga t0.509 f0.493 | ga+rep t0.968 f0.975 | sisa t0.956 f0.948
+[mnist/vit/s0/cls] orig t0.967 f0.972 | retrain t0.873 f0.000 | ga t0.825 f0.076 | ga+rep t0.944 f0.785 | sisa t0.864 f0.000
+16:41:18 svhn/vit/s0 rc=0 931s
+[svhn/vit/s0/rand] orig t0.811 f0.841 | retrain t0.820 f0.828 | ga t0.306 f0.357 | ga+rep t0.820 f0.856 | sisa t0.723 f0.738
+[svhn/vit/s0/cls] orig t0.811 f0.825 | retrain t0.734 f0.000 | ga t0.665 f0.125 | ga+rep t0.790 f0.384 | sisa t0.657 f0.000
+16:51:35 cifar10/vit/s0 rc=0 617s
+[cifar10/vit/s0/rand] orig t0.598 f0.666 | retrain t0.604 f0.624 | ga t0.310 f0.324 | ga+rep t0.576 f0.642 | sisa t0.543 f0.569
+[cifar10/vit/s0/cls] orig t0.598 f0.372 | retrain t0.591 f0.000 | ga t0.522 f0.023 | ga+rep t0.581 f0.000 | sisa t0.521 f0.000
+17:02:02 cifar100/vit/s0 rc=0 627s
+[cifar100/vit/s0/rand] orig t0.330 f0.398 | retrain t0.321 f0.314 | ga t0.083 f0.094 | ga+rep t0.323 f0.374 | sisa t0.239 f0.243
+[cifar100/vit/s0/cls] orig t0.330 f0.340 | retrain t0.331 f0.000 | ga t0.255 f0.000 | ga+rep t0.330 f0.000 | sisa t0.238 f0.000
+18:05:16 mnist/resnet18/s0 rc=0 3794s
+[mnist/resnet18/s0/rand] orig t0.980 f0.987 | retrain t0.985 f0.985 | ga t0.089 f0.075 | ga+rep t0.992 f0.999 | sisa t0.992 f0.992
+[mnist/resnet18/s0/cls] orig t0.980 f0.999 | retrain t0.890 f0.000 | ga t0.835 f0.079 | ga+rep t0.953 f0.594 | sisa t0.891 f0.000
+19:24:47 svhn/resnet18/s0 rc=0 4772s
+[svhn/resnet18/s0/rand] orig t0.940 f0.969 | retrain t0.935 f0.917 | ga t0.061 f0.075 | ga+rep t0.935 f0.962 | sisa t0.918 f0.910
+[svhn/resnet18/s0/cls] orig t0.940 f0.973 | retrain t0.834 f0.000 | ga t0.062 f0.000 | ga+rep t0.929 f0.873 | sisa t0.822 f0.000
+20:18:10 cifar10/resnet18/s0 rc=0 3202s
+[cifar10/resnet18/s0/rand] orig t0.772 f0.875 | retrain t0.758 f0.775 | ga t0.393 f0.425 | ga+rep t0.811 f0.931 | sisa t0.645 f0.649
+[cifar10/resnet18/s0/cls] orig t0.772 f0.715 | retrain t0.737 f0.000 | ga t0.545 f0.002 | ga+rep t0.744 f0.002 | sisa t0.647 f0.000
+21:12:49 cifar100/resnet18/s0 rc=0 3280s
+[cifar100/resnet18/s0/rand] orig t0.497 f0.687 | retrain t0.484 f0.449 | ga t0.015 f0.010 | ga+rep t0.495 f0.693 | sisa t0.292 f0.287
+[cifar100/resnet18/s0/cls] orig t0.497 f0.474 | retrain t0.488 f0.000 | ga t0.281 f0.000 | ga+rep t0.506 f0.090 | sisa t0.312 f0.000
+21:13:47 mnist/cnn/s1 rc=0 58s
+[mnist/cnn/s1/rand] orig t0.987 f0.993 | retrain t0.988 f0.990 | ga t0.637 f0.651 | ga+rep t0.977 f0.980 | sisa t0.978 f0.976
+[mnist/cnn/s1/cls] orig t0.987 f0.995 | retrain t0.889 f0.000 | ga t0.588 f0.000 | ga+rep t0.960 f0.768 | sisa t0.878 f0.000
+21:14:59 svhn/cnn/s1 rc=0 71s
+[svhn/cnn/s1/rand] orig t0.877 f0.928 | retrain t0.882 f0.899 | ga t0.479 f0.473 | ga+rep t0.840 f0.862 | sisa t0.755 f0.762
+[svhn/cnn/s1/cls] orig t0.877 f0.906 | retrain t0.792 f0.000 | ga t0.784 f0.299 | ga+rep t0.834 f0.478 | sisa t0.652 f0.000
+21:15:47 cifar10/cnn/s1 rc=0 48s
+[cifar10/cnn/s1/rand] orig t0.599 f0.651 | retrain t0.600 f0.604 | ga t0.303 f0.291 | ga+rep t0.551 f0.581 | sisa t0.403 f0.418
+[cifar10/cnn/s1/cls] orig t0.599 f0.410 | retrain t0.589 f0.000 | ga t0.570 f0.097 | ga+rep t0.575 f0.000 | sisa t0.414 f0.000
+21:16:35 cifar100/cnn/s1 rc=0 49s
+[cifar100/cnn/s1/rand] orig t0.228 f0.241 | retrain t0.228 f0.203 | ga t0.084 f0.082 | ga+rep t0.208 f0.225 | sisa t0.061 f0.063
+[cifar100/cnn/s1/cls] orig t0.228 f0.054 | retrain t0.232 f0.000 | ga t0.206 f0.000 | ga+rep t0.223 f0.000 | sisa t0.062 f0.000
+21:17:05 mnist/mlp/s1 rc=0 30s
+[mnist/mlp/s1/rand] orig t0.974 f0.985 | retrain t0.971 f0.970 | ga t0.437 f0.418 | ga+rep t0.918 f0.915 | sisa t0.941 f0.929
+[mnist/mlp/s1/cls] orig t0.974 f0.963 | retrain t0.874 f0.000 | ga t0.693 f0.014 | ga+rep t0.955 f0.827 | sisa t0.849 f0.000
+21:17:45 svhn/mlp/s1 rc=0 39s
+[svhn/mlp/s1/rand] orig t0.806 f0.860 | retrain t0.813 f0.830 | ga t0.536 f0.554 | ga+rep t0.792 f0.831 | sisa t0.681 f0.726
+[svhn/mlp/s1/cls] orig t0.806 f0.869 | retrain t0.737 f0.000 | ga t0.683 f0.467 | ga+rep t0.769 f0.312 | sisa t0.630 f0.000
+21:18:11 cifar10/mlp/s1 rc=0 26s
+[cifar10/mlp/s1/rand] orig t0.537 f0.647 | retrain t0.531 f0.526 | ga t0.361 f0.406 | ga+rep t0.535 f0.593 | sisa t0.483 f0.465
+[cifar10/mlp/s1/cls] orig t0.537 f0.495 | retrain t0.525 f0.000 | ga t0.529 f0.076 | ga+rep t0.513 f0.000 | sisa t0.470 f0.000
+21:18:37 cifar100/mlp/s1 rc=0 27s
+[cifar100/mlp/s1/rand] orig t0.245 f0.305 | retrain t0.245 f0.232 | ga t0.112 f0.116 | ga+rep t0.228 f0.249 | sisa t0.159 f0.151
+[cifar100/mlp/s1/cls] orig t0.245 f0.112 | retrain t0.249 f0.000 | ga t0.244 f0.000 | ga+rep t0.244 f0.000 | sisa t0.160 f0.000
+21:31:05 mnist/vit/s1 rc=0 748s
+[mnist/vit/s1/rand] orig t0.974 f0.981 | retrain t0.975 f0.974 | ga t0.292 f0.289 | ga+rep t0.974 f0.980 | sisa t0.960 f0.951
+[mnist/vit/s1/cls] orig t0.974 f0.953 | retrain t0.872 f0.000 | ga t0.879 f0.254 | ga+rep t0.939 f0.696 | sisa t0.865 f0.000
+21:46:53 svhn/vit/s1 rc=0 948s
+[svhn/vit/s1/rand] orig t0.829 f0.863 | retrain t0.817 f0.842 | ga t0.332 f0.336 | ga+rep t0.820 f0.867 | sisa t0.716 f0.766
+[svhn/vit/s1/cls] orig t0.829 f0.826 | retrain t0.730 f0.000 | ga t0.657 f0.256 | ga+rep t0.769 f0.304 | sisa t0.661 f0.000
+21:57:19 cifar10/vit/s1 rc=0 626s
+[cifar10/vit/s1/rand] orig t0.601 f0.653 | retrain t0.598 f0.607 | ga t0.302 f0.308 | ga+rep t0.584 f0.623 | sisa t0.541 f0.541
+[cifar10/vit/s1/cls] orig t0.601 f0.656 | retrain t0.589 f0.000 | ga t0.504 f0.031 | ga+rep t0.578 f0.000 | sisa t0.520 f0.000
+22:07:54 cifar100/vit/s1 rc=0 635s
+[cifar100/vit/s1/rand] orig t0.327 f0.402 | retrain t0.328 f0.326 | ga t0.093 f0.087 | ga+rep t0.315 f0.387 | sisa t0.231 f0.236
+[cifar100/vit/s1/cls] orig t0.327 f0.158 | retrain t0.337 f0.000 | ga t0.302 f0.006 | ga+rep t0.334 f0.000 | sisa t0.233 f0.000
+22:08:52 mnist/cnn/s2 rc=0 58s
+[mnist/cnn/s2/rand] orig t0.986 f0.993 | retrain t0.987 f0.986 | ga t0.574 f0.556 | ga+rep t0.966 f0.971 | sisa t0.978 f0.975
+[mnist/cnn/s2/cls] orig t0.986 f0.994 | retrain t0.888 f0.000 | ga t0.799 f0.000 | ga+rep t0.969 f0.803 | sisa t0.877 f0.000
+22:10:04 svhn/cnn/s2 rc=0 73s
+[svhn/cnn/s2/rand] orig t0.871 f0.904 | retrain t0.871 f0.878 | ga t0.536 f0.559 | ga+rep t0.848 f0.879 | sisa t0.535 f0.526
+[svhn/cnn/s2/cls] orig t0.871 f0.892 | retrain t0.788 f0.000 | ga t0.774 f0.161 | ga+rep t0.831 f0.463 | sisa t0.568 f0.000
+22:10:52 cifar10/cnn/s2 rc=0 48s
+[cifar10/cnn/s2/rand] orig t0.603 f0.645 | retrain t0.584 f0.573 | ga t0.282 f0.283 | ga+rep t0.542 f0.566 | sisa t0.377 f0.382
+[cifar10/cnn/s2/cls] orig t0.603 f0.601 | retrain t0.588 f0.000 | ga t0.577 f0.117 | ga+rep t0.573 f0.000 | sisa t0.383 f0.000
+22:11:40 cifar100/cnn/s2 rc=0 48s
+[cifar100/cnn/s2/rand] orig t0.215 f0.214 | retrain t0.208 f0.188 | ga t0.081 f0.064 | ga+rep t0.218 f0.214 | sisa t0.035 f0.031
+[cifar100/cnn/s2/cls] orig t0.215 f0.004 | retrain t0.202 f0.000 | ga t0.210 f0.000 | ga+rep t0.208 f0.000 | sisa t0.027 f0.000
+22:12:10 mnist/mlp/s2 rc=0 30s
+[mnist/mlp/s2/rand] orig t0.962 f0.974 | retrain t0.972 f0.982 | ga t0.345 f0.338 | ga+rep t0.944 f0.946 | sisa t0.944 f0.937
+[mnist/mlp/s2/cls] orig t0.962 f0.986 | retrain t0.872 f0.000 | ga t0.535 f0.002 | ga+rep t0.932 f0.625 | sisa t0.848 f0.000
+22:12:49 svhn/mlp/s2 rc=0 39s
+[svhn/mlp/s2/rand] orig t0.779 f0.840 | retrain t0.805 f0.845 | ga t0.535 f0.543 | ga+rep t0.782 f0.841 | sisa t0.686 f0.712
+[svhn/mlp/s2/cls] orig t0.779 f0.833 | retrain t0.719 f0.000 | ga t0.603 f0.457 | ga+rep t0.739 f0.263 | sisa t0.621 f0.000
+22:13:15 cifar10/mlp/s2 rc=0 26s
+[cifar10/mlp/s2/rand] orig t0.530 f0.621 | retrain t0.530 f0.532 | ga t0.363 f0.380 | ga+rep t0.532 f0.595 | sisa t0.482 f0.472
+[cifar10/mlp/s2/cls] orig t0.530 f0.542 | retrain t0.517 f0.000 | ga t0.503 f0.083 | ga+rep t0.532 f0.000 | sisa t0.469 f0.000
+22:13:41 cifar100/mlp/s2 rc=0 26s
+[cifar100/mlp/s2/rand] orig t0.241 f0.293 | retrain t0.239 f0.243 | ga t0.145 f0.136 | ga+rep t0.241 f0.277 | sisa t0.158 f0.158
+[cifar100/mlp/s2/cls] orig t0.241 f0.022 | retrain t0.245 f0.000 | ga t0.240 f0.000 | ga+rep t0.242 f0.000 | sisa t0.160 f0.000
+22:26:12 mnist/vit/s2 rc=0 751s
+[mnist/vit/s2/rand] orig t0.965 f0.978 | retrain t0.972 f0.970 | ga t0.377 f0.382 | ga+rep t0.968 f0.976 | sisa t0.961 f0.961
+[mnist/vit/s2/cls] orig t0.965 f0.991 | retrain t0.872 f0.000 | ga t0.853 f0.195 | ga+rep t0.946 f0.658 | sisa t0.860 f0.000
+22:42:00 svhn/vit/s2 rc=0 948s
+[svhn/vit/s2/rand] orig t0.798 f0.845 | retrain t0.805 f0.833 | ga t0.374 f0.375 | ga+rep t0.800 f0.851 | sisa t0.728 f0.738
+[svhn/vit/s2/cls] orig t0.798 f0.812 | retrain t0.737 f0.000 | ga t0.644 f0.271 | ga+rep t0.756 f0.340 | sisa t0.659 f0.000
+22:52:29 cifar10/vit/s2 rc=0 629s
+[cifar10/vit/s2/rand] orig t0.592 f0.647 | retrain t0.594 f0.583 | ga t0.274 f0.280 | ga+rep t0.596 f0.625 | sisa t0.531 f0.523
+[cifar10/vit/s2/cls] orig t0.592 f0.638 | retrain t0.576 f0.000 | ga t0.553 f0.068 | ga+rep t0.580 f0.000 | sisa t0.516 f0.000
+23:03:10 cifar100/vit/s2 rc=0 641s
+[cifar100/vit/s2/rand] orig t0.336 f0.411 | retrain t0.337 f0.315 | ga t0.105 f0.107 | ga+rep t0.340 f0.365 | sisa t0.241 f0.226
+[cifar100/vit/s2/cls] orig t0.336 f0.114 | retrain t0.313 f0.000 | ga t0.315 f0.010 | ga+rep t0.333 f0.000 | sisa t0.238 f0.000
