@@ -17,3 +17,11 @@ Caveats: different training budget from the FedAvg run (18 epoch-equivalents per
 - Speed-up vs naive retrain: delete 1 -> 6.1x / 12.2x / 24.5x (S=5/10/20); delete 10 -> 1.2x / 1.6x / 2.7x; delete 100 -> ~1.0x (all shards hit).
 - Check, seed 0 only (`SISA_E=10 SISA_S=20`, `results_svhn/svhn_sisa_S20_E10.json`): S=20 with 10 epochs per slice reaches 0.857, so the S=20 collapse is a training-budget artifact. (Its speed-ups are relative to a 9-epoch baseline, so not comparable to the table.)
 Caveats: small CNN, uniform IID shards, cost counted in sample passes not wall time.
+
+## SVHN gradient ascent + GA vs SISA comparison (Mac, 3 seeds)
+Same SVHN data and small CNN as the SISA experiment. Single model trained 9 epochs (test 0.888). Two forget targets: 1000 random train samples, and every training sample of digit 3. Gold standard = retrain on the remaining data from the same init.
+- `svhn_ga.py` -> `results_svhn_ga/svhn_ga.json`, plot `plot_svhn_ga.py` -> `svhn_ga.png`. GA = plain SGD ascent on forget batches, stopped when forget loss >= ln10 (cap 300 steps); repair = 1 epoch on 5000 random retain samples. lr in {1e-3, 3e-3, 1e-2}.
+- `svhn_sisa_metrics.py` -> `results_svhn_ga/svhn_sisa_metrics.json`: SISA (S=5, 10, R=5, 3 epochs/slice) on the identical forget sets/metrics. `plot_svhn_compare.py` -> `svhn_ga_vs_sisa.png`. Cost = sample passes relative to the retrain.
+- Class 3: retrain forget acc 0.000. GA only (lr 1e-3) 0.385 at 1.1% cost; GA+repair 0.62 (lr 1e-3) / 0.52 (lr 3e-3) at 1.3-2% cost (repair revives the class). SISA S=5/10: 0.000 (exact) but cost 1.00 because IID shards all contain digit 3; test acc 0.788 / 0.757 vs 0.801 retrain.
+- Random 1000: original forget 0.935, retrain 0.893. GA+repair returns to 0.93 (relearns); SISA S=5 0.879, S=10 0.833 at cost 1.00 (all shards hit). MIA is ~0.52-0.56 for everything, too weak to separate methods.
+- lr 1e-2 is unstable (test 0.27-0.64 depending on seed). Caveats: small CNN, 3 seeds, one repair recipe, IID shards (class-aware sharding not tried).

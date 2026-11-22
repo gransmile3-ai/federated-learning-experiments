@@ -1,0 +1,14 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[seed 0 S=5 rand] shards hit 5/5 cost 0.65M | test 0.869 forget 0.863 fcls_test 0.817
+[seed 0 S=5 cls] shards hit 5/5 cost 0.58M | test 0.788 forget 0.000 fcls_test 0.000
+[seed 0 S=10 rand] shards hit 10/10 cost 0.65M | test 0.829 forget 0.818 fcls_test 0.756
+[seed 0 S=10 cls] shards hit 10/10 cost 0.58M | test 0.752 forget 0.000 fcls_test 0.000
+[seed 1 S=5 rand] shards hit 5/5 cost 0.65M | test 0.871 forget 0.893 fcls_test 0.843
+[seed 1 S=5 cls] shards hit 5/5 cost 0.58M | test 0.788 forget 0.000 fcls_test 0.000
+[seed 1 S=10 rand] shards hit 10/10 cost 0.65M | test 0.835 forget 0.852 fcls_test 0.829
+[seed 1 S=10 cls] shards hit 10/10 cost 0.58M | test 0.760 forget 0.000 fcls_test 0.000
+[seed 2 S=5 rand] shards hit 5/5 cost 0.65M | test 0.867 forget 0.882 fcls_test 0.813
+[seed 2 S=5 cls] shards hit 5/5 cost 0.58M | test 0.790 forget 0.000 fcls_test 0.000
+[seed 2 S=10 rand] shards hit 10/10 cost 0.65M | test 0.819 forget 0.829 fcls_test 0.729
+[seed 2 S=10 cls] shards hit 10/10 cost 0.58M | test 0.760 forget 0.000 fcls_test 0.000
+done

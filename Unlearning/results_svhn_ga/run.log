@@ -1,0 +1,26 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[seed 0 rand] lr 0.001: steps 205 stop test 0.616 forget 0.597 | repair test 0.892 forget 0.928 forgetclass-test 0.837
+[seed 0 rand] lr 0.003: steps 70 stop test 0.634 forget 0.615 | repair test 0.895 forget 0.923 forgetclass-test 0.825
+[seed 0 rand] lr 0.01: steps 25 stop test 0.067 forget 0.066 | repair test 0.193 forget 0.206 forgetclass-test 0.018
+[seed 0 rand] orig test 0.891 forget 0.924 | retrain test 0.881 forget 0.885
+[seed 0 cls] lr 0.001: steps 80 stop test 0.836 forget 0.419 | repair test 0.872 forget 0.645 forgetclass-test 0.555
+[seed 0 cls] lr 0.003: steps 30 stop test 0.749 forget 0.008 | repair test 0.858 forget 0.476 forgetclass-test 0.420
+[seed 0 cls] lr 0.01: steps 10 stop test 0.061 forget 0.000 | repair test 0.196 forget 0.000 forgetclass-test 0.000
+[seed 0 cls] orig test 0.891 forget 0.933 | retrain test 0.798 forget 0.000
+[seed 1 rand] lr 0.001: steps 300 stop test 0.836 forget 0.863 | repair test 0.890 forget 0.933 forgetclass-test 0.788
+[seed 1 rand] lr 0.003: steps 150 stop test 0.525 forget 0.562 | repair test 0.879 forget 0.921 forgetclass-test 0.797
+[seed 1 rand] lr 0.01: steps 45 stop test 0.438 forget 0.482 | repair test 0.865 forget 0.908 forgetclass-test 0.764
+[seed 1 rand] orig test 0.890 forget 0.950 | retrain test 0.885 forget 0.910
+[seed 1 cls] lr 0.001: steps 95 stop test 0.811 forget 0.355 | repair test 0.870 forget 0.613 forgetclass-test 0.571
+[seed 1 cls] lr 0.003: steps 30 stop test 0.806 forget 0.374 | repair test 0.869 forget 0.610 forgetclass-test 0.571
+[seed 1 cls] lr 0.01: steps 10 stop test 0.762 forget 0.209 | repair test 0.866 forget 0.571 forgetclass-test 0.539
+[seed 1 cls] orig test 0.890 forget 0.927 | retrain test 0.801 forget 0.000
+[seed 2 rand] lr 0.001: steps 275 stop test 0.487 forget 0.496 | repair test 0.880 forget 0.928 forgetclass-test 0.826
+[seed 2 rand] lr 0.003: steps 95 stop test 0.328 forget 0.342 | repair test 0.878 forget 0.932 forgetclass-test 0.797
+[seed 2 rand] lr 0.01: steps 30 stop test 0.303 forget 0.319 | repair test 0.875 forget 0.922 forgetclass-test 0.780
+[seed 2 rand] orig test 0.882 forget 0.930 | retrain test 0.876 forget 0.885
+[seed 2 cls] lr 0.001: steps 135 stop test 0.821 forget 0.381 | repair test 0.863 forget 0.600 forgetclass-test 0.532
+[seed 2 cls] lr 0.003: steps 50 stop test 0.775 forget 0.096 | repair test 0.850 forget 0.469 forgetclass-test 0.413
+[seed 2 cls] lr 0.01: steps 15 stop test 0.790 forget 0.218 | repair test 0.857 forget 0.531 forgetclass-test 0.475
+[seed 2 cls] orig test 0.882 forget 0.943 | retrain test 0.803 forget 0.000
+done

@@ -72,3 +72,11 @@ SISA 논문(Bourtoule et al.)이 쓴 SVHN으로 샤드 수(5/10/20)별 정확도
 ![SVHN SISA](Unlearning/svhn_sisa.png)
 
 샘플 1개 삭제는 샤드 수가 많을수록 빨라지지만(최대 약 24배) 10개 이상이면 대부분의 샤드가 걸려 이득이 사라진다. 샤드가 많을수록 앙상블 정확도는 내려가며, S=20의 큰 하락은 샤드당 학습량 부족 때문이었다(epoch 10으로 늘리면 0.857).
+
+## 주요 결과 5: SVHN에서 Gradient Ascent vs SISA
+
+SVHN과 같은 작은 CNN으로 gradient ascent(GA)를 돌리고, 같은 잊을 대상(랜덤 1000개 / 숫자 3 클래스)과 지표로 SISA와 비교했다 (맥북, 3시드). 자세한 내용은 [`Unlearning/README.md`](Unlearning/README.md).
+
+![GA vs SISA](Unlearning/svhn_ga_vs_sisa.png)
+
+GA는 재학습의 1~3% 비용으로 일부만 잊고(숫자 3 정확도 0.87 → 0.36~0.55, 재학습은 0.00), 보정하면 모델은 회복되지만 잊은 내용도 되살아난다. SISA는 정확하게 잊지만(0.00) 샤드를 랜덤으로 나눠서 모든 샤드가 걸려 비용이 재학습과 같고, 앙상블 정확도가 조금 낮다.
