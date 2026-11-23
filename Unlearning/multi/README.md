@@ -12,3 +12,10 @@ Findings (full tables in `summary.md`):
 - GA + repair: 2-14% cost, test acc recovered, but class accuracy returns to 0.3-0.9 on MNIST/SVHN (ResNet-18 SVHN 0.873).
 - On CIFAR-10/100 the class-3 "forget acc 0.000" is weak evidence: the original model barely recognises that class (CIFAR-100 CNN 0.058). Only ResNet-18 CIFAR-10 (original 0.715) is informative.
 Caveats: single recipe per model, no per-model tuning of GA lr/stop rule, ResNet-18 has one seed, SISA undertrained per shard, MIA only logged for random targets.
+
+## EECC evaluation (Mercuri et al. 2022, Sec. 3)
+`eecc.py <results_dir> <out_prefix>` computes the four properties against the naive retrain: Efficiency (retrain time / unlearn time, also sample passes), Effectiveness (|test acc diff|), Certifiability (SAPE of accuracy on the forgotten data, Eq. 3.6), Consistency (test-prediction agreement, KL(retrain || unlearned), parameter L2).
+- `eecc_noconsistency.md`: all 16 combos, from the original sweep (`results/`); consistency columns empty.
+- `eecc_cnn_mlp.md`: CNN and MLP, 3 seeds, rerun with consistency (`multi_run_c.py`, `run_all_c.py`, `results_c/`). Accuracies reproduce the original sweep.
+- Not measured: Consistency for ViT and ResNet-18 (weights were not saved in the first sweep).
+Reading notes: (1) the original model itself agrees with the retrain on only 0.69-0.77 of test predictions (independently trained networks differ), so agreement must be compared against that floor; (2) GA changes parameters little (L2 ~ same as the original) but its outputs differ a lot from the retrain (KL ~3 on random targets); (3) SISA's consistency is measured against a single-model retrain, while its exactness is relative to a retrained shard ensemble, so those numbers are not a test of SISA's exactness; (4) Certifiability for random targets is weak evidence because original and retrain nearly coincide there.
