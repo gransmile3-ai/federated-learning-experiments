@@ -79,7 +79,7 @@ SVHN과 같은 작은 CNN으로 gradient ascent(GA)를 돌리고, 같은 잊을 
 
 ![GA vs SISA](Unlearning/svhn_ga_vs_sisa.png)
 
-GA는 재학습의 1~3% 비용으로 일부만 잊고(숫자 3 정확도 0.87 → 0.36~0.55, 재학습은 0.00), 보정하면 모델은 회복되지만 잊은 내용도 되살아난다. SISA는 정확하게 잊지만(0.00) 샤드를 랜덤으로 나눠서 모든 샤드가 걸려 비용이 재학습과 같고, 앙상블 정확도가 조금 낮다.
+GA는 재학습의 1–3% 비용으로 일부만 잊고(숫자 3 정확도 0.87 → 0.36–0.55, 재학습은 0.00), 보정하면 모델은 회복되지만 잊은 내용도 되살아난다. SISA는 정확하게 잊지만(0.00) 샤드를 랜덤으로 나눠서 모든 샤드가 걸려 비용이 재학습과 같고, 앙상블 정확도가 조금 낮다.
 
 ## 주요 결과 6: 데이터셋 4개 × 모델 4개 언러닝 비교
 
@@ -87,10 +87,10 @@ MNIST / SVHN / CIFAR-10 / CIFAR-100 와 작은 CNN / MLP / ResNet-18 / 작은 Vi
 
 ![클래스 잊기](Unlearning/multi/multi_cls.png)
 
-SISA는 모든 조합에서 정확하게 잊지만 비용은 재학습과 같고 앙상블 정확도가 낮다. GA는 재학습의 1~4% 비용이지만 모델이 손상되고(ResNet-18에서 특히 심함), 보정하면 성능은 회복되지만 잊은 내용도 되살아난다. CIFAR 계열에서는 원본이 해당 클래스를 원래 잘 못 맞혀서 "잊음" 해석이 약하다.
+SISA는 모든 조합에서 정확하게 잊지만 비용은 재학습과 같고 앙상블 정확도가 낮다. GA는 재학습의 1–4% 비용이지만 모델이 손상되고(ResNet-18에서 특히 심함), 보정하면 성능은 회복되지만 잊은 내용도 되살아난다. CIFAR 계열에서는 원본이 해당 클래스를 원래 잘 못 맞혀서 "잊음" 해석이 약하다.
 
 ## 주요 결과 7: EECC 지표로 본 GA / GA+보정 / SISA
 
 SISA 논문(Mercuri et al.) 3장의 평가 기준 EECC(Efficiency, Effectiveness, Consistency, Certifiability)를 재학습 모델 대비로 계산했다. CNN·MLP는 Consistency까지 3시드, ViT·ResNet-18은 Consistency 없이 계산했다. 표와 해석은 [`Unlearning/multi/README.md`](Unlearning/multi/README.md)의 EECC 절, [`eecc_cnn_mlp.md`](Unlearning/multi/eecc_cnn_mlp.md).
 
-GA는 시간 기준 재학습의 1/12~1/200이지만 재학습 모델과의 예측 차이가 크고(랜덤 잊기 KL≈3), GA+보정은 Effectiveness가 가장 작으나 클래스 잊기에서 Certifiability(SAPE)가 50~58%라 잊은 데이터 정보가 남는다. SISA는 클래스 잊기에서 Certifiability 0이지만 이 설정에서는 Efficiency 이득이 없다.
+GA는 시간 기준 재학습의 1/12–1/200이지만 재학습 모델과의 예측 차이가 크고(랜덤 잊기 KL≈3), GA+보정은 Effectiveness가 가장 작으나 클래스 잊기에서 Certifiability(SAPE)가 50–58%라 잊은 데이터 정보가 남는다. SISA는 클래스 잊기에서 Certifiability 0이지만 이 설정에서는 Efficiency 이득이 없다.
