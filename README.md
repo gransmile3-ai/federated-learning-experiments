@@ -1,6 +1,6 @@
-# Federated Learning Experiments
+# Federated Learning & Machine Unlearning Experiments
 
-[Flower](https://flower.ai/)와 PyTorch로 진행한 연합학습 실험 모음입니다.
+[Flower](https://flower.ai/)와 PyTorch로 진행한 연합학습 및 머신 언러닝(Gradient Ascent, FedEraser, SISA) 실험 모음입니다.
 
 ## 구성
 
